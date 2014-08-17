@@ -1,0 +1,126 @@
+
+$font-face: "Helvetica Neue", "Helvetica", sans-serif
+
+.full
+  margin: 0
+  padding: 0
+
+ul, 
+ol, 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6
+  @extend .full
+
+body
+  font-family: $font-face
+  font-size: .825em
+
+a
+  text-decoration: none
+
+.hidden
+  display: none !important
+
+.fulfill
+  @extend .full
+  width: 100%
+  height: 100%
+  display: block
+
+.button
+  color: #FF0000
+  padding: .4em 2em
+  border-radius: 2px
+  background-color: #FFFFFF
+  display: inline-block
+  vertical-align: baseline
+  white-space: nowrap
+  text-align: center
+  line-height: normal
+  border-width: 0
+  cursor: pointer
+  zoom: 1
+  -webkit-user-drag: none
+  -webkit-user-select: none
+
+.up-arrow
+  display: inline-block
+  width: 40px
+  height: 25px
+  margin-bottom: 12px
+  background-image: url(//placehold.it/80x50)
+  background-size: 40px 25px
+  background-position: center center
+
+html, 
+body,
+#one-page-wrapper
+  @extend .fulfill
+
+#cover
+  @extend .fulfill
+  overflow: hidden
+
+.game-result
+  position: absolute
+  bottom: -165px
+  height: 165px
+  left: 0
+  right: 0
+  z-index: 1
+  color: #FFFFFF
+  padding: 0 20px
+  background-color: rgba(255,0,0, .33)
+  -webkit-transition: bottom  600ms ease
+
+.game-result-show
+  bottom: 0px
+
+  &>div
+    margin-top: 15px
+    text-align: center
+
+  &>div:first-child
+    span:first-child
+      font-size: 1.8em
+
+  .button
+    font-size: 1.6em
+
+.realtime-percentage
+  background-color: transparent
+  color: #FFFFFF
+  z-index: 2
+  position: absolute
+  bottom: 30%
+  left: 0
+  right: 0
+
+  &>div,
+  p
+    text-align: center
+
+  &>div>span
+    font-size: 1.125em
+
+.map-scene
+  overflow: hidden
+  background-repeat: no-repeat 
+  background-size: cover
+
+#map-1
+  background-image: url(http://placehold.it/1000x1000/ff6600)
+
+#map-2
+  background-image: url(http://placehold.it/1000x1000/0066ff)
+
+#map-3
+  background-image: url(http://placehold.it/1000x1000/00ff66)
+
+#map-4
+  background-image: url(http://placehold.it/1000x1000/66ff00)

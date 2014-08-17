@@ -1,0 +1,74 @@
+<!doctype html>
+
+<!-- http://lylijincheng.github.io/maple/app.html -->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>枫叶黄金周</title>
+
+    <link rel="stylesheet" href="./stylesheets/normalize.css">
+    <link rel="stylesheet" href="./stylesheets/onepage-scroll.css">
+
+    <link rel="stylesheet" href="./stylesheets/maple-app.css">
+
+    <script src="./javascripts/jquery-1.11.1.js"></script>
+    <script src="./javascripts/jquery.onepage-scroll.js"></script>
+    <script src="./javascripts/wScratchPad.js"></script>
+    <script src="./javascripts/underscore.js"></script>
+
+    <script src="./javascripts/maple-app.js"></script>
+
+    <script async src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js"></script>
+</head>
+<body>
+    
+    <div id="one-page-wrapper">
+        <section id="cover">
+            <div class="realtime-percentage hidden">
+                <div> <span id="realtime-seconds"></span> </div>
+                <div>
+                    <p>还有 <span id="realtime-percentage"></span>% 的面积</p>
+                    <p>加速擦除</p>
+                </div>
+            </div>
+            <div class="game-result">
+                <div>
+                    扫枫用时 <span id="game-result"></span><br>
+                    恭喜！比 <span id="game-percentage"></span> 的用户都快
+                </div>
+                <div>
+                    <a id="share-result" class="button" href="javascript:;">分享并抽奖</a>
+                </div>
+                <div>
+                    <span class="up-arrow"></span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="map-1" class="map-scene">
+                
+            </div>
+        </section>
+
+        <section>
+            <div id="map-2" class="map-scene">
+                
+            </div>
+        </section>
+
+        <section>
+            <div id="map-3" class="map-scene">
+                
+            </div>
+        </section>
+    </div>
+</body>
+</html>

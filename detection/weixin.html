@@ -1,5 +1,7 @@
 <!doctype html>
 
+<!-- http://lylijincheng.github.io/maple/detection/weixin.html -->
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,17 +11,20 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <title>Maple site</title>
-
-    <style rel="stylesheet" href="./stylesheets/normalize.css"></style>
-    <style rel="stylesheet" href="./stylesheets/maple.css"></style>
-
-    <script async src="./javascripts/jquery-1.11.1.js"></script>
-    <script async src="./javascripts/underscore.js"></script>
-
-    <script async src="./javascripts/maple-mobile.js"></script>
+    <title>detect-weixin</title>
 </head>
 <body>
-    
+
+    <script>
+    var key, bridge;
+    if (window.WeixinJSBridge) {
+        bridge = window.WeixinJSBridge;
+
+        for (key in bridge) {
+            document.write(key + '\n');
+        }
+    }
+
+    </script>
 </body>
 </html>

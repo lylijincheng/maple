@@ -1,0 +1,190 @@
+@import "compass/css3"
+@import "compass/utilities"
+
+$font-face: "Helvetica Neue", "Helvetica", simhei, "Microsoft yahei", "微软雅黑", sans-serif
+
+.full
+  margin: 0
+  padding: 0
+
+ul, 
+ol, 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6
+  @extend .full
+
+body
+  font-family: $font-face
+
+a
+  text-decoration: none
+
+ul 
+  list-style: none
+
+  &>li
+    padding: 0
+
+.hidden
+  display: none !important
+
+.fulfill
+  @extend .full
+  width: 100%
+  height: 100%
+  display: block
+
+html, 
+body,
+#one-page-wrapper
+  @extend .fulfill
+
+#cover
+  color: #FFFFFF
+
+  .logo
+    margin: 2%
+    float: left
+
+  .header-title
+    margin-left: 360px
+    margin-top: 5%
+
+  h1, h2
+    font-weight: normal
+    letter-spacing: 2px
+
+  h1
+    font-size: 4em
+
+  h2
+    font-size: 2.4em
+    margin-top: .2em
+  
+  .cover-content
+    width: 85%
+    margin: 24px auto 0 auto
+
+  .cover-body
+    height: 400px
+    background-color: #dddddd
+    margin-bottom: 80px
+
+  .cover-sidebar
+    float: right
+
+  .cover-links,
+  .cover-video
+    width: 200px
+    height: 200px
+
+  .cover-links
+    background-color: #ED6571
+
+    li
+      width: 99px
+      height: 99px
+      float: left
+      display: inline-block
+      border-bottom: 1px solid #BF252F
+
+    li:nth-child(2n-1)
+      border-right: 1px solid #BF252F
+
+    a
+      display: inline-blcok
+
+  .cover-video
+    background-color: #FEB70F
+
+#scene
+  color: #FFFFFF
+
+  .scene-header
+    padding-top: 20px
+    position: relative
+
+  .subtitle
+    margin-left: 20px
+    margin-bottom: 20px
+    padding: 10px 20px
+    border: 4px solid #FFFFFF
+    width: 320px
+
+  .scene-header:after
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    border: 15px solid transparent
+    border-bottom-color: #FFFFFF
+    top: 94px
+    left: 26px
+    +transform(rotate(45deg), false)
+
+  h1, h2
+    display: inline-block
+
+  h1
+    font-size: 4em
+    margin-left: .2em
+
+  h2
+    width: 132px
+    text-align: right
+    font-size: 1.6em
+  
+  .scene-description,
+  .slides-type
+    font-size: 1.2em
+    letter-spacing: 1px
+
+  .scene-description
+    padding: 40px 60px
+
+  .slides-type
+    height: 200px
+    padding: 20px 60px
+    position: relative
+
+  .slides-set
+    width: 70px
+    height: 70px
+    position: absolute
+
+  .slides-set:nth-child(1)
+    left: 70px
+
+  .slides-set:nth-child(2)
+    left: 210px
+
+  .slides-set:nth-child(3)
+    left: 350px
+
+  .slides-set:nth-child(4)
+    left: 490px
+
+  .slides-set:nth-child(5)
+    left: 630px
+
+  .slides-set:nth-child(6)
+    left: 770px
+
+  .carousel
+    width: 780px
+    margin: 0 auto
+
+#one-page-wrapper
+  section:nth-child(1) 
+    +background-image(linear-gradient(right, #BF1C5D, #BF2527))
+
+  section:nth-child(2) 
+    +background-image(linear-gradient(right, #2399C9, #2E59C9))
+
+  section:nth-child(3) 
+    +background-image(linear-gradient(right, #2098CA, #2E959A))
