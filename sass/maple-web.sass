@@ -20,6 +20,7 @@ h6
 
 body
   font-family: $font-face
+  color: #FFFFFF
 
 a
   text-decoration: none
@@ -52,10 +53,10 @@ body,
     float: left
 
   .header-title
-    margin-left: 360px
+    margin-left: 400px
     margin-top: 5%
 
-  h1, h2
+  h1, h2, h3
     font-weight: normal
     letter-spacing: 2px
 
@@ -63,17 +64,29 @@ body,
     font-size: 4em
 
   h2
-    font-size: 2.4em
+    font-size: 2em
     margin-top: .2em
   
+  h3
+    font-size: 1.2em
+    line-height: 1.8em
+    margin: 1em 0
+    padding-left: 1.6em
+    background: url(../images/loc-small.png) no-repeat left center
+
+  i
+    display: inline-block
+    position: absolute
+
   .cover-content
     width: 85%
     margin: 24px auto 0 auto
 
   .cover-body
     height: 400px
-    background-color: #dddddd
     margin-bottom: 80px
+    margin-right: 202px
+    background: url(../images/maple-background.png) no-repeat
 
   .cover-sidebar
     float: right
@@ -88,44 +101,156 @@ body,
 
     li
       width: 99px
-      height: 99px
+      height: 100px
       float: left
       display: inline-block
-      border-bottom: 1px solid #BF252F
+      position: relative
+      border-bottom: 2px solid #BF252F
 
     li:nth-child(2n-1)
-      border-right: 1px solid #BF252F
+      border-right: 2px solid #BF252F
 
     a
-      display: inline-blcok
+      display: inline-block
+      padding: 14px
+      margin-left: 12px
+      line-height: 1.4
+      color: #FFFFFF
+      font-size: 24px
+
+    .location
+      width: 83px
+      height: 87px
+      background: url(../images/loc-big.png) no-repeat
+      top: 22px
+      left: 26px
+
+    .prize
+      width: 96px
+      height: 92px
+      background: url(../images/prize.png) no-repeat
+      top: 8px
+      left: 20px
+
+    a:hover
+      text-decoration: none
 
   .cover-video
     background-color: #FEB70F
+    position: relative
+
+    .video-play
+      width: 91px
+      height: 95px
+      top: 66px
+      left: 66px
+      background: url(../images/video-play.png) no-repeat
 
 #scene
-  color: #FFFFFF
+  padding-bottom: 80px
 
-  .scene-header
-    padding-top: 20px
+  .slides-type
+    height: 200px
+    width: 800px
+    margin: 15px auto
     position: relative
+    background: url(../images/map-line.png) no-repeat left bottom
+
+  .slides-set
+    width: 70px
+    height: 70px
+    position: absolute
+
+  .slides-set:nth-child(1)
+    left: 20px
+    top: 32px
+
+  .slides-set:nth-child(2)
+    left: 166px
+    top: 16px
+
+  .slides-set:nth-child(3)
+    left: 330px
+    top: 80px
+
+  .slides-set:nth-child(4)
+    left: 540px
+    top: 45px
+
+  .slides-set:nth-child(5)
+    left: 745px
+    top: 32px
+
+  .carousel
+    width: 780px
+    margin: 0 auto
+
+#hotel
+  padding-bottom: 80px
+
+  .subtitle
+    width: 400px
+
+    h2
+      width: 85px
+
+  .trip
+    width: 800px
+    margin: 20px auto
+
+    border-spacing: 3px
+    border-collapse: separate
+
+    td
+      width: 180px
+      padding: 5px
+      background-color: #FFFFFF
+      color: #333333
+
+      p
+        margin: 8px 0
+        padding: 0 .4em
+
+      .from
+        font-size: smaller
+
+      .link
+        margin-top: 15px
+        color: #48C9CE
+
+.separation-title
+  width: 800px
+  margin: 40px auto
+
+  .separation-header
+    float: left
+    font-size: 32px
+    margin-left: 34px
+
+  .separation-begin,
+  .separation-end
+    width: 300px
+    height: 2px
+    background: #FFFFFF
+    position: relative
+    top: 22px
+
+  .separation-begin
+    float: left
+
+  .separation-end
+    float: right
+
+.scene-header
+  padding-top: 20px
+  position: relative
 
   .subtitle
     margin-left: 20px
     margin-bottom: 20px
     padding: 10px 20px
     border: 4px solid #FFFFFF
-    width: 320px
-
-  .scene-header:after
-    content: ''
-    position: absolute
-    width: 0
-    height: 0
-    border: 15px solid transparent
-    border-bottom-color: #FFFFFF
-    top: 94px
-    left: 26px
-    +transform(rotate(45deg), false)
+    width: 485px
 
   h1, h2
     display: inline-block
@@ -135,56 +260,51 @@ body,
     margin-left: .2em
 
   h2
-    width: 132px
+    width: 130px
     text-align: right
     font-size: 1.6em
-  
-  .scene-description,
-  .slides-type
-    font-size: 1.2em
-    letter-spacing: 1px
 
-  .scene-description
-    padding: 40px 60px
+.scene-header:after
+  content: ''
+  position: absolute
+  width: 0
+  height: 0
+  border: 15px solid transparent
+  border-bottom-color: #FFFFFF
+  top: 94px
+  left: 26px
+  +transform(rotate(45deg), false)
 
-  .slides-type
-    height: 200px
-    padding: 20px 60px
-    position: relative
 
-  .slides-set
-    width: 70px
-    height: 70px
-    position: absolute
+.scene-description,
+.slides-type
+  font-size: 1.2em
+  letter-spacing: 1px
 
-  .slides-set:nth-child(1)
-    left: 70px
+.scene-description
+  padding: 40px 60px
+  text-indent: 2em
 
-  .slides-set:nth-child(2)
-    left: 210px
+.site-footer
+  ul 
+    width: 800px
+    margin: 40px auto
 
-  .slides-set:nth-child(3)
-    left: 350px
+    li
+      float: left
 
-  .slides-set:nth-child(4)
-    left: 490px
+  .partner > li
+    margin 0 36px
 
-  .slides-set:nth-child(5)
-    left: 630px
-
-  .slides-set:nth-child(6)
-    left: 770px
-
-  .carousel
-    width: 780px
-    margin: 0 auto
+  .social > li
+    margin: 0 70px
 
 #one-page-wrapper
   section:nth-child(1) 
-    +background-image(linear-gradient(right, #BF1C5D, #BF2527))
+    +background-image(linear-gradient(to right, #BF1C5D, #BF2527))
 
   section:nth-child(2) 
-    +background-image(linear-gradient(right, #2399C9, #2E59C9))
+    +background-image(linear-gradient(to right, #2098CA, #2E57CD))
 
   section:nth-child(3) 
-    +background-image(linear-gradient(right, #2098CA, #2E959A))
+    +background-image(linear-gradient(to right, #48C9CE, #3292A0))

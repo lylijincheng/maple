@@ -18,28 +18,29 @@ body,
 /* line 21, ../sass/maple-web.sass */
 body {
   font-family: "Helvetica Neue", "Helvetica", simhei, "Microsoft yahei", "微软雅黑", sans-serif;
+  color: white;
 }
 
-/* line 24, ../sass/maple-web.sass */
+/* line 25, ../sass/maple-web.sass */
 a {
   text-decoration: none;
 }
 
-/* line 27, ../sass/maple-web.sass */
+/* line 28, ../sass/maple-web.sass */
 ul {
   list-style: none;
 }
-/* line 30, ../sass/maple-web.sass */
+/* line 31, ../sass/maple-web.sass */
 ul > li {
   padding: 0;
 }
 
-/* line 33, ../sass/maple-web.sass */
+/* line 34, ../sass/maple-web.sass */
 .hidden {
   display: none !important;
 }
 
-/* line 36, ../sass/maple-web.sass */
+/* line 37, ../sass/maple-web.sass */
 .fulfill, html,
 body,
 #one-page-wrapper {
@@ -48,99 +49,279 @@ body,
   display: block;
 }
 
-/* line 47, ../sass/maple-web.sass */
+/* line 48, ../sass/maple-web.sass */
 #cover {
   color: white;
 }
-/* line 50, ../sass/maple-web.sass */
+/* line 51, ../sass/maple-web.sass */
 #cover .logo {
   margin: 2%;
   float: left;
 }
-/* line 54, ../sass/maple-web.sass */
+/* line 55, ../sass/maple-web.sass */
 #cover .header-title {
-  margin-left: 360px;
+  margin-left: 400px;
   margin-top: 5%;
 }
-/* line 58, ../sass/maple-web.sass */
-#cover h1, #cover h2 {
+/* line 59, ../sass/maple-web.sass */
+#cover h1, #cover h2, #cover h3 {
   font-weight: normal;
   letter-spacing: 2px;
 }
-/* line 62, ../sass/maple-web.sass */
+/* line 63, ../sass/maple-web.sass */
 #cover h1 {
   font-size: 4em;
 }
-/* line 65, ../sass/maple-web.sass */
+/* line 66, ../sass/maple-web.sass */
 #cover h2 {
-  font-size: 2.4em;
+  font-size: 2em;
   margin-top: 0.2em;
 }
-/* line 69, ../sass/maple-web.sass */
+/* line 70, ../sass/maple-web.sass */
+#cover h3 {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin: 1em 0;
+  padding-left: 1.6em;
+  background: url(../images/loc-small.png) no-repeat left center;
+}
+/* line 77, ../sass/maple-web.sass */
+#cover i {
+  display: inline-block;
+  position: absolute;
+}
+/* line 81, ../sass/maple-web.sass */
 #cover .cover-content {
   width: 85%;
   margin: 24px auto 0 auto;
 }
-/* line 73, ../sass/maple-web.sass */
+/* line 85, ../sass/maple-web.sass */
 #cover .cover-body {
   height: 400px;
-  background-color: #dddddd;
   margin-bottom: 80px;
+  margin-right: 202px;
+  background: url(../images/maple-background.png) no-repeat;
 }
-/* line 78, ../sass/maple-web.sass */
+/* line 91, ../sass/maple-web.sass */
 #cover .cover-sidebar {
   float: right;
 }
-/* line 81, ../sass/maple-web.sass */
+/* line 94, ../sass/maple-web.sass */
 #cover .cover-links,
 #cover .cover-video {
   width: 200px;
   height: 200px;
 }
-/* line 86, ../sass/maple-web.sass */
+/* line 99, ../sass/maple-web.sass */
 #cover .cover-links {
   background-color: #ed6571;
 }
-/* line 89, ../sass/maple-web.sass */
+/* line 102, ../sass/maple-web.sass */
 #cover .cover-links li {
   width: 99px;
-  height: 99px;
+  height: 100px;
   float: left;
   display: inline-block;
-  border-bottom: 1px solid #bf252f;
+  position: relative;
+  border-bottom: 2px solid #bf252f;
 }
-/* line 96, ../sass/maple-web.sass */
+/* line 110, ../sass/maple-web.sass */
 #cover .cover-links li:nth-child(2n-1) {
-  border-right: 1px solid #bf252f;
+  border-right: 2px solid #bf252f;
 }
-/* line 99, ../sass/maple-web.sass */
+/* line 113, ../sass/maple-web.sass */
 #cover .cover-links a {
-  display: inline-blcok;
+  display: inline-block;
+  padding: 14px;
+  margin-left: 12px;
+  line-height: 1.4;
+  color: white;
+  font-size: 24px;
 }
-/* line 102, ../sass/maple-web.sass */
+/* line 121, ../sass/maple-web.sass */
+#cover .cover-links .location {
+  width: 83px;
+  height: 87px;
+  background: url(../images/loc-big.png) no-repeat;
+  top: 22px;
+  left: 26px;
+}
+/* line 128, ../sass/maple-web.sass */
+#cover .cover-links .prize {
+  width: 96px;
+  height: 92px;
+  background: url(../images/prize.png) no-repeat;
+  top: 8px;
+  left: 20px;
+}
+/* line 135, ../sass/maple-web.sass */
+#cover .cover-links a:hover {
+  text-decoration: none;
+}
+/* line 138, ../sass/maple-web.sass */
 #cover .cover-video {
   background-color: #feb70f;
+  position: relative;
+}
+/* line 142, ../sass/maple-web.sass */
+#cover .cover-video .video-play {
+  width: 91px;
+  height: 95px;
+  top: 66px;
+  left: 66px;
+  background: url(../images/video-play.png) no-repeat;
 }
 
-/* line 105, ../sass/maple-web.sass */
+/* line 149, ../sass/maple-web.sass */
 #scene {
-  color: white;
+  padding-bottom: 80px;
 }
-/* line 108, ../sass/maple-web.sass */
-#scene .scene-header {
+/* line 152, ../sass/maple-web.sass */
+#scene .slides-type {
+  height: 200px;
+  width: 800px;
+  margin: 15px auto;
+  position: relative;
+  background: url(../images/map-line.png) no-repeat left bottom;
+}
+/* line 159, ../sass/maple-web.sass */
+#scene .slides-set {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+/* line 164, ../sass/maple-web.sass */
+#scene .slides-set:nth-child(1) {
+  left: 20px;
+  top: 32px;
+}
+/* line 168, ../sass/maple-web.sass */
+#scene .slides-set:nth-child(2) {
+  left: 166px;
+  top: 16px;
+}
+/* line 172, ../sass/maple-web.sass */
+#scene .slides-set:nth-child(3) {
+  left: 330px;
+  top: 80px;
+}
+/* line 176, ../sass/maple-web.sass */
+#scene .slides-set:nth-child(4) {
+  left: 540px;
+  top: 45px;
+}
+/* line 180, ../sass/maple-web.sass */
+#scene .slides-set:nth-child(5) {
+  left: 745px;
+  top: 32px;
+}
+/* line 184, ../sass/maple-web.sass */
+#scene .carousel {
+  width: 780px;
+  margin: 0 auto;
+}
+
+/* line 188, ../sass/maple-web.sass */
+#hotel {
+  padding-bottom: 80px;
+}
+/* line 191, ../sass/maple-web.sass */
+#hotel .subtitle {
+  width: 400px;
+}
+/* line 194, ../sass/maple-web.sass */
+#hotel .subtitle h2 {
+  width: 85px;
+}
+/* line 197, ../sass/maple-web.sass */
+#hotel .trip {
+  width: 800px;
+  margin: 20px auto;
+  border-spacing: 3px;
+  border-collapse: separate;
+}
+/* line 204, ../sass/maple-web.sass */
+#hotel .trip td {
+  width: 180px;
+  padding: 5px;
+  background-color: white;
+  color: #333333;
+}
+/* line 210, ../sass/maple-web.sass */
+#hotel .trip td p {
+  margin: 8px 0;
+  padding: 0 0.4em;
+}
+/* line 214, ../sass/maple-web.sass */
+#hotel .trip td .from {
+  font-size: smaller;
+}
+/* line 217, ../sass/maple-web.sass */
+#hotel .trip td .link {
+  margin-top: 15px;
+  color: #48c9ce;
+}
+
+/* line 221, ../sass/maple-web.sass */
+.separation-title {
+  width: 800px;
+  margin: 40px auto;
+}
+/* line 225, ../sass/maple-web.sass */
+.separation-title .separation-header {
+  float: left;
+  font-size: 32px;
+  margin-left: 34px;
+}
+/* line 230, ../sass/maple-web.sass */
+.separation-title .separation-begin,
+.separation-title .separation-end {
+  width: 300px;
+  height: 2px;
+  background: white;
+  position: relative;
+  top: 22px;
+}
+/* line 238, ../sass/maple-web.sass */
+.separation-title .separation-begin {
+  float: left;
+}
+/* line 241, ../sass/maple-web.sass */
+.separation-title .separation-end {
+  float: right;
+}
+
+/* line 244, ../sass/maple-web.sass */
+.scene-header {
   padding-top: 20px;
   position: relative;
 }
-/* line 112, ../sass/maple-web.sass */
-#scene .subtitle {
+/* line 248, ../sass/maple-web.sass */
+.scene-header .subtitle {
   margin-left: 20px;
   margin-bottom: 20px;
   padding: 10px 20px;
   border: 4px solid white;
-  width: 320px;
+  width: 485px;
 }
-/* line 119, ../sass/maple-web.sass */
-#scene .scene-header:after {
+/* line 255, ../sass/maple-web.sass */
+.scene-header h1, .scene-header h2 {
+  display: inline-block;
+}
+/* line 258, ../sass/maple-web.sass */
+.scene-header h1 {
+  font-size: 4em;
+  margin-left: 0.2em;
+}
+/* line 262, ../sass/maple-web.sass */
+.scene-header h2 {
+  width: 130px;
+  text-align: right;
+  font-size: 1.6em;
+}
+
+/* line 267, ../sass/maple-web.sass */
+.scene-header:after {
   content: "";
   position: absolute;
   width: 0;
@@ -155,94 +336,55 @@ body,
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 130, ../sass/maple-web.sass */
-#scene h1, #scene h2 {
-  display: inline-block;
-}
-/* line 133, ../sass/maple-web.sass */
-#scene h1 {
-  font-size: 4em;
-  margin-left: 0.2em;
-}
-/* line 137, ../sass/maple-web.sass */
-#scene h2 {
-  width: 132px;
-  text-align: right;
-  font-size: 1.6em;
-}
-/* line 142, ../sass/maple-web.sass */
-#scene .scene-description,
-#scene .slides-type {
+
+/* line 279, ../sass/maple-web.sass */
+.scene-description,
+.slides-type {
   font-size: 1.2em;
   letter-spacing: 1px;
 }
-/* line 147, ../sass/maple-web.sass */
-#scene .scene-description {
+
+/* line 284, ../sass/maple-web.sass */
+.scene-description {
   padding: 40px 60px;
-}
-/* line 150, ../sass/maple-web.sass */
-#scene .slides-type {
-  height: 200px;
-  padding: 20px 60px;
-  position: relative;
-}
-/* line 155, ../sass/maple-web.sass */
-#scene .slides-set {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-}
-/* line 160, ../sass/maple-web.sass */
-#scene .slides-set:nth-child(1) {
-  left: 70px;
-}
-/* line 163, ../sass/maple-web.sass */
-#scene .slides-set:nth-child(2) {
-  left: 210px;
-}
-/* line 166, ../sass/maple-web.sass */
-#scene .slides-set:nth-child(3) {
-  left: 350px;
-}
-/* line 169, ../sass/maple-web.sass */
-#scene .slides-set:nth-child(4) {
-  left: 490px;
-}
-/* line 172, ../sass/maple-web.sass */
-#scene .slides-set:nth-child(5) {
-  left: 630px;
-}
-/* line 175, ../sass/maple-web.sass */
-#scene .slides-set:nth-child(6) {
-  left: 770px;
-}
-/* line 178, ../sass/maple-web.sass */
-#scene .carousel {
-  width: 780px;
-  margin: 0 auto;
+  text-indent: 2em;
 }
 
-/* line 183, ../sass/maple-web.sass */
+/* line 289, ../sass/maple-web.sass */
+.site-footer ul {
+  width: 800px;
+  margin: 40px auto;
+}
+/* line 293, ../sass/maple-web.sass */
+.site-footer ul li {
+  float: left;
+}
+/* line 299, ../sass/maple-web.sass */
+.site-footer .social > li {
+  margin: 0 70px;
+}
+
+/* line 303, ../sass/maple-web.sass */
 #one-page-wrapper section:nth-child(1) {
-  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #bf1c5d), color-stop(100%, #bf2527));
-  background-image: -webkit-linear-gradient(right, #bf1c5d, #bf2527);
-  background-image: -moz-linear-gradient(right, #bf1c5d, #bf2527);
-  background-image: -o-linear-gradient(right, #bf1c5d, #bf2527);
-  background-image: linear-gradient(right, #bf1c5d, #bf2527);
+  background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #bf1c5d), color-stop(100%, #bf2527));
+  background-image: -webkit-linear-gradient(to right, #bf1c5d, #bf2527);
+  background-image: -moz-linear-gradient(to right, #bf1c5d, #bf2527);
+  background-image: -o-linear-gradient(to right, #bf1c5d, #bf2527);
+  background-image: linear-gradient(to right, #bf1c5d, #bf2527);
 }
-/* line 186, ../sass/maple-web.sass */
+/* line 306, ../sass/maple-web.sass */
 #one-page-wrapper section:nth-child(2) {
-  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #2399c9), color-stop(100%, #2e59c9));
-  background-image: -webkit-linear-gradient(right, #2399c9, #2e59c9);
-  background-image: -moz-linear-gradient(right, #2399c9, #2e59c9);
-  background-image: -o-linear-gradient(right, #2399c9, #2e59c9);
-  background-image: linear-gradient(right, #2399c9, #2e59c9);
+  background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #2098ca), color-stop(100%, #2e57cd));
+  background-image: -webkit-linear-gradient(to right, #2098ca, #2e57cd);
+  background-image: -moz-linear-gradient(to right, #2098ca, #2e57cd);
+  background-image: -o-linear-gradient(to right, #2098ca, #2e57cd);
+  background-image: linear-gradient(to right, #2098ca, #2e57cd);
 }
-/* line 189, ../sass/maple-web.sass */
+/* line 309, ../sass/maple-web.sass */
 #one-page-wrapper section:nth-child(3) {
-  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #2098ca), color-stop(100%, #2e959a));
-  background-image: -webkit-linear-gradient(right, #2098ca, #2e959a);
-  background-image: -moz-linear-gradient(right, #2098ca, #2e959a);
-  background-image: -o-linear-gradient(right, #2098ca, #2e959a);
-  background-image: linear-gradient(right, #2098ca, #2e959a);
+  background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #48c9ce), color-stop(100%, #3292a0));
+  background-image: -webkit-linear-gradient(to right, #48c9ce, #3292a0);
+  background-image: -moz-linear-gradient(to right, #48c9ce, #3292a0);
+  background-image: -o-linear-gradient(to right, #48c9ce, #3292a0);
+  background-image: linear-gradient(to right, #48c9ce, #3292a0);
 }
