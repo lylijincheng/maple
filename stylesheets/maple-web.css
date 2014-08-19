@@ -15,32 +15,32 @@ body,
   padding: 0;
 }
 
-/* line 21, ../sass/maple-web.sass */
+/* line 27, ../sass/maple-web.sass */
 body {
   font-family: "Helvetica Neue", "Helvetica", simhei, "Microsoft yahei", "微软雅黑", sans-serif;
   color: white;
 }
 
-/* line 25, ../sass/maple-web.sass */
+/* line 31, ../sass/maple-web.sass */
 a {
   text-decoration: none;
 }
 
-/* line 28, ../sass/maple-web.sass */
+/* line 34, ../sass/maple-web.sass */
 ul {
   list-style: none;
 }
-/* line 31, ../sass/maple-web.sass */
+/* line 37, ../sass/maple-web.sass */
 ul > li {
   padding: 0;
 }
 
-/* line 34, ../sass/maple-web.sass */
+/* line 40, ../sass/maple-web.sass */
 .hidden {
   display: none !important;
 }
 
-/* line 37, ../sass/maple-web.sass */
+/* line 43, ../sass/maple-web.sass */
 .fulfill, html,
 body,
 #one-page-wrapper {
@@ -49,35 +49,35 @@ body,
   display: block;
 }
 
-/* line 48, ../sass/maple-web.sass */
+/* line 54, ../sass/maple-web.sass */
 #cover {
   color: white;
 }
-/* line 51, ../sass/maple-web.sass */
+/* line 57, ../sass/maple-web.sass */
 #cover .logo {
   margin: 2%;
   float: left;
 }
-/* line 55, ../sass/maple-web.sass */
+/* line 61, ../sass/maple-web.sass */
 #cover .header-title {
   margin-left: 400px;
   margin-top: 5%;
 }
-/* line 59, ../sass/maple-web.sass */
+/* line 65, ../sass/maple-web.sass */
 #cover h1, #cover h2, #cover h3 {
   font-weight: normal;
   letter-spacing: 2px;
 }
-/* line 63, ../sass/maple-web.sass */
+/* line 69, ../sass/maple-web.sass */
 #cover h1 {
   font-size: 4em;
 }
-/* line 66, ../sass/maple-web.sass */
+/* line 72, ../sass/maple-web.sass */
 #cover h2 {
   font-size: 2em;
   margin-top: 0.2em;
 }
-/* line 70, ../sass/maple-web.sass */
+/* line 76, ../sass/maple-web.sass */
 #cover h3 {
   font-size: 1.2em;
   line-height: 1.8em;
@@ -85,38 +85,62 @@ body,
   padding-left: 1.6em;
   background: url(../images/loc-small.png) no-repeat left center;
 }
-/* line 77, ../sass/maple-web.sass */
+/* line 83, ../sass/maple-web.sass */
 #cover i {
   display: inline-block;
   position: absolute;
 }
-/* line 81, ../sass/maple-web.sass */
+/* line 87, ../sass/maple-web.sass */
 #cover .cover-content {
   width: 85%;
   margin: 24px auto 0 auto;
 }
-/* line 85, ../sass/maple-web.sass */
-#cover .cover-body {
+/* line 91, ../sass/maple-web.sass */
+#cover .cover-body,
+#cover .video-layer {
   height: 400px;
   margin-bottom: 80px;
   margin-right: 202px;
-  background: url(../images/maple-background.png) no-repeat;
 }
-/* line 91, ../sass/maple-web.sass */
+/* line 98, ../sass/maple-web.sass */
+#cover .cover-body .logo-small {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+  font-size: 0.875em;
+  background: url(../images/logo-site.png) no-repeat;
+  width: 127px;
+  height: 60px;
+  padding-top: 42px;
+  -webkit-user-select: none;
+}
+/* line 110, ../sass/maple-web.sass */
+#cover .video-layer {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  width: 100%;
+}
+/* line 117, ../sass/maple-web.sass */
 #cover .cover-sidebar {
   float: right;
 }
-/* line 94, ../sass/maple-web.sass */
+/* line 120, ../sass/maple-web.sass */
 #cover .cover-links,
 #cover .cover-video {
   width: 200px;
   height: 200px;
 }
-/* line 99, ../sass/maple-web.sass */
+/* line 125, ../sass/maple-web.sass */
 #cover .cover-links {
   background-color: #ed6571;
 }
-/* line 102, ../sass/maple-web.sass */
+/* line 128, ../sass/maple-web.sass */
 #cover .cover-links li {
   width: 99px;
   height: 100px;
@@ -125,11 +149,11 @@ body,
   position: relative;
   border-bottom: 2px solid #bf252f;
 }
-/* line 110, ../sass/maple-web.sass */
+/* line 136, ../sass/maple-web.sass */
 #cover .cover-links li:nth-child(2n-1) {
   border-right: 2px solid #bf252f;
 }
-/* line 113, ../sass/maple-web.sass */
+/* line 139, ../sass/maple-web.sass */
 #cover .cover-links a {
   display: inline-block;
   padding: 14px;
@@ -138,7 +162,7 @@ body,
   color: white;
   font-size: 24px;
 }
-/* line 121, ../sass/maple-web.sass */
+/* line 147, ../sass/maple-web.sass */
 #cover .cover-links .location {
   width: 83px;
   height: 87px;
@@ -146,7 +170,7 @@ body,
   top: 22px;
   left: 26px;
 }
-/* line 128, ../sass/maple-web.sass */
+/* line 154, ../sass/maple-web.sass */
 #cover .cover-links .prize {
   width: 96px;
   height: 92px;
@@ -154,16 +178,16 @@ body,
   top: 8px;
   left: 20px;
 }
-/* line 135, ../sass/maple-web.sass */
+/* line 161, ../sass/maple-web.sass */
 #cover .cover-links a:hover {
   text-decoration: none;
 }
-/* line 138, ../sass/maple-web.sass */
+/* line 164, ../sass/maple-web.sass */
 #cover .cover-video {
   background-color: #feb70f;
   position: relative;
 }
-/* line 142, ../sass/maple-web.sass */
+/* line 168, ../sass/maple-web.sass */
 #cover .cover-video .video-play {
   width: 91px;
   height: 95px;
@@ -172,11 +196,11 @@ body,
   background: url(../images/video-play.png) no-repeat;
 }
 
-/* line 149, ../sass/maple-web.sass */
+/* line 175, ../sass/maple-web.sass */
 #scene {
   padding-bottom: 80px;
 }
-/* line 152, ../sass/maple-web.sass */
+/* line 178, ../sass/maple-web.sass */
 #scene .slides-type {
   height: 200px;
   width: 800px;
@@ -184,96 +208,146 @@ body,
   position: relative;
   background: url(../images/map-line.png) no-repeat left bottom;
 }
-/* line 159, ../sass/maple-web.sass */
+/* line 185, ../sass/maple-web.sass */
 #scene .slides-set {
   width: 70px;
   height: 70px;
   position: absolute;
+  border-left: 20px solid #ef7979;
 }
-/* line 164, ../sass/maple-web.sass */
+/* line 191, ../sass/maple-web.sass */
+#scene .slides-set:after {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: -15px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 15px solid transparent;
+  border-left-color: red;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 203, ../sass/maple-web.sass */
 #scene .slides-set:nth-child(1) {
   left: 20px;
   top: 32px;
 }
-/* line 168, ../sass/maple-web.sass */
+/* line 207, ../sass/maple-web.sass */
 #scene .slides-set:nth-child(2) {
   left: 166px;
   top: 16px;
 }
-/* line 172, ../sass/maple-web.sass */
+/* line 211, ../sass/maple-web.sass */
 #scene .slides-set:nth-child(3) {
   left: 330px;
   top: 80px;
 }
-/* line 176, ../sass/maple-web.sass */
+/* line 215, ../sass/maple-web.sass */
 #scene .slides-set:nth-child(4) {
   left: 540px;
   top: 45px;
 }
-/* line 180, ../sass/maple-web.sass */
+/* line 219, ../sass/maple-web.sass */
 #scene .slides-set:nth-child(5) {
   left: 745px;
   top: 32px;
 }
-/* line 184, ../sass/maple-web.sass */
+/* line 223, ../sass/maple-web.sass */
 #scene .carousel {
   width: 780px;
   margin: 0 auto;
 }
+/* line 227, ../sass/maple-web.sass */
+#scene .carousel-caption {
+  right: 25%;
+  left: 25%;
+}
+/* line 231, ../sass/maple-web.sass */
+#scene .carousel-info {
+  border: 4px solid white;
+}
+/* line 234, ../sass/maple-web.sass */
+#scene .carousel-info h3 {
+  margin: 12px 0 10px 0;
+}
+/* line 237, ../sass/maple-web.sass */
+#scene .carousel-info .carousel-info-title {
+  float: left;
+  padding: 0 25px;
+}
+/* line 241, ../sass/maple-web.sass */
+#scene .carousel-info .carousel-info-link {
+  width: 90px;
+  border-left: 4px solid white;
+  font-size: 20px;
+  line-height: 86px;
+  float: right;
+  color: white;
+}
+/* line 249, ../sass/maple-web.sass */
+#scene .carousel-info .carousel-info-link:hover {
+  text-decoration: none;
+}
 
-/* line 188, ../sass/maple-web.sass */
+/* line 252, ../sass/maple-web.sass */
 #hotel {
   padding-bottom: 80px;
 }
-/* line 191, ../sass/maple-web.sass */
+/* line 255, ../sass/maple-web.sass */
 #hotel .subtitle {
   width: 400px;
 }
-/* line 194, ../sass/maple-web.sass */
+/* line 258, ../sass/maple-web.sass */
 #hotel .subtitle h2 {
   width: 85px;
 }
-/* line 197, ../sass/maple-web.sass */
+/* line 261, ../sass/maple-web.sass */
 #hotel .trip {
   width: 800px;
   margin: 20px auto;
+  margin-bottom: 0;
   border-spacing: 3px;
   border-collapse: separate;
 }
-/* line 204, ../sass/maple-web.sass */
+/* line 269, ../sass/maple-web.sass */
 #hotel .trip td {
   width: 180px;
   padding: 5px;
   background-color: white;
   color: #333333;
 }
-/* line 210, ../sass/maple-web.sass */
+/* line 275, ../sass/maple-web.sass */
 #hotel .trip td p {
   margin: 8px 0;
   padding: 0 0.4em;
 }
-/* line 214, ../sass/maple-web.sass */
+/* line 279, ../sass/maple-web.sass */
 #hotel .trip td .from {
   font-size: smaller;
 }
-/* line 217, ../sass/maple-web.sass */
+/* line 282, ../sass/maple-web.sass */
 #hotel .trip td .link {
   margin-top: 15px;
   color: #48c9ce;
 }
 
-/* line 221, ../sass/maple-web.sass */
+/* line 286, ../sass/maple-web.sass */
 .separation-title {
   width: 800px;
   margin: 40px auto;
 }
-/* line 225, ../sass/maple-web.sass */
+/* line 290, ../sass/maple-web.sass */
 .separation-title .separation-header {
   float: left;
   font-size: 32px;
   margin-left: 34px;
 }
-/* line 230, ../sass/maple-web.sass */
+/* line 295, ../sass/maple-web.sass */
 .separation-title .separation-begin,
 .separation-title .separation-end {
   width: 300px;
@@ -282,21 +356,21 @@ body,
   position: relative;
   top: 22px;
 }
-/* line 238, ../sass/maple-web.sass */
+/* line 303, ../sass/maple-web.sass */
 .separation-title .separation-begin {
   float: left;
 }
-/* line 241, ../sass/maple-web.sass */
+/* line 306, ../sass/maple-web.sass */
 .separation-title .separation-end {
   float: right;
 }
 
-/* line 244, ../sass/maple-web.sass */
+/* line 309, ../sass/maple-web.sass */
 .scene-header {
   padding-top: 20px;
   position: relative;
 }
-/* line 248, ../sass/maple-web.sass */
+/* line 313, ../sass/maple-web.sass */
 .scene-header .subtitle {
   margin-left: 20px;
   margin-bottom: 20px;
@@ -304,23 +378,23 @@ body,
   border: 4px solid white;
   width: 485px;
 }
-/* line 255, ../sass/maple-web.sass */
+/* line 320, ../sass/maple-web.sass */
 .scene-header h1, .scene-header h2 {
   display: inline-block;
 }
-/* line 258, ../sass/maple-web.sass */
+/* line 323, ../sass/maple-web.sass */
 .scene-header h1 {
   font-size: 4em;
   margin-left: 0.2em;
 }
-/* line 262, ../sass/maple-web.sass */
+/* line 327, ../sass/maple-web.sass */
 .scene-header h2 {
   width: 130px;
   text-align: right;
   font-size: 1.6em;
 }
 
-/* line 267, ../sass/maple-web.sass */
+/* line 332, ../sass/maple-web.sass */
 .scene-header:after {
   content: "";
   position: absolute;
@@ -337,34 +411,68 @@ body,
   transform: rotate(45deg);
 }
 
-/* line 279, ../sass/maple-web.sass */
+/* line 344, ../sass/maple-web.sass */
 .scene-description,
 .slides-type {
   font-size: 1.2em;
   letter-spacing: 1px;
 }
 
-/* line 284, ../sass/maple-web.sass */
+/* line 349, ../sass/maple-web.sass */
 .scene-description {
   padding: 40px 60px;
   text-indent: 2em;
 }
 
-/* line 289, ../sass/maple-web.sass */
+/* line 353, ../sass/maple-web.sass */
+.site-footer {
+  background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #48c9ce), color-stop(100%, #2c888d));
+  background-image: -webkit-linear-gradient(to right, #48c9ce, #2c888d);
+  background-image: -moz-linear-gradient(to right, #48c9ce, #2c888d);
+  background-image: -o-linear-gradient(to right, #48c9ce, #2c888d);
+  background-image: linear-gradient(to right, #48c9ce, #2c888d);
+  padding-top: 20px;
+  width: 800px;
+  margin: 0 auto;
+}
+/* line 359, ../sass/maple-web.sass */
 .site-footer ul {
   width: 800px;
   margin: 40px auto;
 }
-/* line 293, ../sass/maple-web.sass */
+/* line 363, ../sass/maple-web.sass */
 .site-footer ul li {
   float: left;
 }
-/* line 299, ../sass/maple-web.sass */
+/* line 366, ../sass/maple-web.sass */
+.site-footer .partner > li {
+  margin: 0 36px;
+}
+/* line 369, ../sass/maple-web.sass */
 .site-footer .social > li {
-  margin: 0 70px;
+  margin: 0 50px;
+  text-align: center;
+}
+/* line 373, ../sass/maple-web.sass */
+.site-footer .social > li a {
+  color: white;
+}
+/* line 376, ../sass/maple-web.sass */
+.site-footer .social > li a:hover {
+  text-decoration: none;
+}
+/* line 379, ../sass/maple-web.sass */
+.site-footer .social > li .title {
+  margin: 10px 0;
+  font-size: 1.3em;
+}
+/* line 388, ../sass/maple-web.sass */
+.site-footer .social > li .youku a {
+  padding: 0.35em 1em;
+  background-color: #01afb8;
 }
 
-/* line 303, ../sass/maple-web.sass */
+/* line 396, ../sass/maple-web.sass */
 #one-page-wrapper section:nth-child(1) {
   background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #bf1c5d), color-stop(100%, #bf2527));
   background-image: -webkit-linear-gradient(to right, #bf1c5d, #bf2527);
@@ -372,7 +480,7 @@ body,
   background-image: -o-linear-gradient(to right, #bf1c5d, #bf2527);
   background-image: linear-gradient(to right, #bf1c5d, #bf2527);
 }
-/* line 306, ../sass/maple-web.sass */
+/* line 399, ../sass/maple-web.sass */
 #one-page-wrapper section:nth-child(2) {
   background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #2098ca), color-stop(100%, #2e57cd));
   background-image: -webkit-linear-gradient(to right, #2098ca, #2e57cd);
@@ -380,7 +488,7 @@ body,
   background-image: -o-linear-gradient(to right, #2098ca, #2e57cd);
   background-image: linear-gradient(to right, #2098ca, #2e57cd);
 }
-/* line 309, ../sass/maple-web.sass */
+/* line 402, ../sass/maple-web.sass */
 #one-page-wrapper section:nth-child(3) {
   background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #48c9ce), color-stop(100%, #3292a0));
   background-image: -webkit-linear-gradient(to right, #48c9ce, #3292a0);
