@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./stylesheets/maple-web.css">
 
     <script src="./javascripts/jquery-1.11.1.js"></script>
+    <script src="./javascripts/underscore.js"></script>
     <script src="./javascripts/carousel.js"></script>
 
     <script src="./javascripts/wScratchPad.js"></script>
@@ -57,7 +58,9 @@
                     </div>
                     <div class="cover-video"><i class="video-play"></i></div>
                 </div>
-                <div id="cover-body" class="cover-body"></div>
+                <div id="cover-body" class="cover-body">
+                    <div class="logo-small">加拿大安大略省旅游局</div>
+                </div>
             </div>
         </section>
 
@@ -81,47 +84,9 @@
                     </ul>
                 </div>
                 <div class="slides-wrapper">
-
-                    <!-- http://getbootstrap.com/javascript/#carousel -->
-                    <div id="carousel-scene-generic" class="carousel slide" data-ride="carousel">
-                      <!-- Indicators -->
-                      <ol class="carousel-indicators">
-                        <li data-target="#carousel-scene-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-scene-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-scene-generic" data-slide-to="2"></li>
-                      </ol>
-
-                      <!-- Wrapper for slides -->
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="//placehold.it/780x420/6600ff" alt="...">
-                          <div class="carousel-caption">
-                            1.经过慕斯科卡（Muskoka Region），直达著名的阿冈昆省立公园。9月最后一周至10月初，是赏枫的黄金时期；璀璨湖泊和迷人小镇的森林如同被颜料涂抹过一般，何等享受！
-                          </div>
-                        </div>
-                        <div class="item">
-                          <img src="//placehold.it/780x420/ff6600" alt="...">
-                          <div class="carousel-caption">
-                           2.经过慕斯科卡（Muskoka Region），直达著名的阿冈昆省立公园。9月最后一周至10月初，是赏枫的黄金时期；璀璨湖泊和迷人小镇的森林如同被颜料涂抹过一般，何等享受！
-                          </div>
-                        </div>
-                        <div class="item">
-                          <img src="//placehold.it/780x420/ff0066" alt="...">
-                          <div class="carousel-caption">
-                            3.经过慕斯科卡（Muskoka Region），直达著名的阿冈昆省立公园。9月最后一周至10月初，是赏枫的黄金时期；璀璨湖泊和迷人小镇的森林如同被颜料涂抹过一般，何等享受！
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Controls -->
-                      <a class="left carousel-control" href="#carousel-scene-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                      <a class="right carousel-control" href="#carousel-scene-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                      </a>
-                    </div>
                 </div>
+
+                <p class="scene-description">经过慕斯科卡（Muskoka Region），直达著名的阿冈昆省立公园。9月最后一周至10月初，是赏枫的黄金时期；璀璨湖泊和迷人小镇的森林如同被颜料涂抹过一般，何等享受！</p>
             </div>
         </section>
 
@@ -207,18 +172,70 @@
 
                     <div class="separation-title clearfix">
                         <div class="separation-begin"></div>
-                        <div class="separation-header">合作伙伴</div>
+                        <div class="separation-header">关注我们+</div>
                         <div class="separation-end"></div>
                     </div>
 
                     <ul class="social clearfix">
-                        <li><img src="//placehold.it/125x125" alt=""></li>
-                        <li><img src="//placehold.it/125x125" alt=""></li>
-                        <li><img src="//placehold.it/125x125" alt=""></li>
+                        <li>
+                            <img src="//placehold.it/125x125" alt="">
+                            <div class="title">安大略省旅游局官方微博</div>
+                            <div class="weibo"><wb:follow-button uid="2169647491" type="red_2" width="136" height="24" ></wb:follow-button></div>
+                        </li>
+                        <li>
+                            <img src="//placehold.it/125x125" alt="">
+                            <div class="title">官方微信</div>
+                            <div class="weixin">扫描关注</div>
+                        </li>
+                        <li>
+                            <img src="//placehold.it/125x125" alt="">
+                            <div class="title">官方优酷</div>
+                            <div class="youku"><a href="">订阅</a></div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
     </div>
+
+    <script type="text/template" id="carousel-template">
+        <!-- http://getbootstrap.com/javascript/#carousel -->
+        <div id="<%= id %>" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <% _.each(slides, function(slide, i) { %>
+                <li data-target="#<%= id %>" data-slide-to="<%= i %>" <% if (i === 0) { %>class="active"<% } %>></li>
+            <% }); %>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <% _.each(slides, function(slide, i) { %>
+            <div class="item <% if (i === 0) { %>active<% } %>">
+              <img src="<%= slide.image %>" alt="<%= slide.alt %>">
+              <div class="carousel-caption">
+                <div class="carousel-info clearfix">
+                    <div class="carousel-info-title">
+                        <h3><%= slide.h3 %></h3>
+                        <h4><%= slide.h4 %></h4>
+                    </div>
+                    <div class="carousel-info-link">
+                        <a href="<%= slide.link %>">探索</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <% }); %>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#<%= id %>" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#<%= id %>" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+    </script>
 </body>
 </html>

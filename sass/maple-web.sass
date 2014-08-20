@@ -7,6 +7,12 @@ $font-face: "Helvetica Neue", "Helvetica", simhei, "Microsoft yahei", "\u5fae\u8
   margin: 0
   padding: 0
 
+=fullscreen
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+
 ul, 
 ol, 
 p, 
@@ -82,12 +88,32 @@ body,
     width: 85%
     margin: 24px auto 0 auto
 
-  .cover-body
+  .cover-body,
+  .video-layer
     height: 400px
     margin-bottom: 80px
     margin-right: 202px
-    background: url(../images/maple-background.png) no-repeat
 
+  .cover-body
+    .logo-small
+      position: absolute
+      left: 10px
+      top: 10px
+      z-index: 1
+      font-size: .875em
+      background: url(../images/logo-site.png) no-repeat
+      width: 127px
+      height: 60px
+      padding-top: 42px
+      -webkit-user-select: none
+
+  .video-layer
+    +fullscreen
+    position: absolute
+    background: rgba(0, 0, 0, .5)
+    z-index: 2
+    width: 100%
+  
   .cover-sidebar
     float: right
 
@@ -160,6 +186,19 @@ body,
     width: 70px
     height: 70px
     position: absolute
+    border-left: 20px solid #EF7979
+
+    &:after 
+      content: ''
+      position: absolute
+      top: 55px
+      left: -15px
+      width: 20px
+      height: 20px
+      display: block
+      border: 15px solid transparent
+      border-left-color: #FF0000
+      +transform(rotate(-45deg), false)
 
   .slides-set:nth-child(1)
     left: 20px
@@ -185,6 +224,31 @@ body,
     width: 780px
     margin: 0 auto
 
+  .carousel-caption
+    right: 25%
+    left: 25%
+
+  .carousel-info
+    border: 4px solid #FFFFFF
+
+    h3
+      margin: 12px 0 10px 0
+    
+    .carousel-info-title
+      float: left
+      padding: 0 25px
+
+    .carousel-info-link
+      width: 90px
+      border-left: 4px solid #FFFFFF
+      font-size: 20px
+      line-height: 86px
+      float: right
+      color: #FFFFFF
+      
+      &:hover
+        text-decoration: none
+
 #hotel
   padding-bottom: 80px
 
@@ -197,6 +261,7 @@ body,
   .trip
     width: 800px
     margin: 20px auto
+    margin-bottom: 0
 
     border-spacing: 3px
     border-collapse: separate
@@ -286,6 +351,11 @@ body,
   text-indent: 2em
 
 .site-footer
+  +background-image(linear-gradient(to right, #48C9CE, #2C888D))
+  padding-top: 20px
+  width: 800px
+  margin: 0 auto
+
   ul 
     width: 800px
     margin: 40px auto
@@ -294,10 +364,30 @@ body,
       float: left
 
   .partner > li
-    margin 0 36px
+    margin: 0 36px
 
   .social > li
-    margin: 0 70px
+    margin: 0 50px
+    text-align: center
+
+    a
+      color: #FFFFFF
+
+    a:hover
+      text-decoration: none
+
+    .title
+      margin: 10px 0
+      font-size: 1.3em
+
+    .weibo
+
+    .weixin
+
+    .youku
+      a
+        padding: .35em 1em
+        background-color: #01AFB8
 
 #one-page-wrapper
   section:nth-child(1) 

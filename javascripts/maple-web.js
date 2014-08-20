@@ -13,12 +13,75 @@ new function() {
     var SCRATCHPAD_OPTIONS = {
         'size': 10,
         'bg': '#0066ff',
-        'fg': '#666666',
+        'fg': './images/maple-background.png',
         'realtime': true,
         'cursor': 'url("./images/leaf.png") 8 8, default',
         'scratchMove': scratchMove,
         'scratchDown': scratchDown
     };
+
+    var slides = [
+        [
+            {
+                image: "http://placehold.it/790x420/ff6600",
+                h3: "全球最佳赏枫大道1",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            },
+            {
+                image: "http://placehold.it/790x420//00ff66",
+                h3: "全球最佳赏枫大道2",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            },
+            {
+                image: "http://placehold.it/790x420/6600ff",
+                h3: "全球最佳赏枫大道3",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            }
+        ],
+        [
+            {
+                image: "http://placehold.it/790x420/ff6600",
+                h3: "全球最佳赏枫大道1",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            },
+            {
+                image: "http://placehold.it/790x420//00ff66",
+                h3: "全球最佳赏枫大道2",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            },
+            {
+                image: "http://placehold.it/790x420/6600ff",
+                h3: "全球最佳赏枫大道3",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            },
+            {
+                image: "http://placehold.it/790x420//00ff66",
+                h3: "全球最佳赏枫大道4",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            },
+            {
+                image: "http://placehold.it/790x420/6600ff",
+                h3: "全球最佳赏枫大道5",
+                h4: "阿冈昆省立公园",
+                link: "",
+                alt: ""
+            }
+        ]
+    ];
 
     var WEIBO_APP_KEY = "3080877242";
 
@@ -26,7 +89,6 @@ new function() {
     var swapTime = 0;
     var swapPercentage = 0;
 
-    var $wrapper;
     var $cover;
 
     var $realtimePercengate;
@@ -43,7 +105,6 @@ new function() {
     var totalSeconds;
 
     function whenReady() {
-        $wrapper = $('#one-page-wrapper');
         $cover = $('#cover-body');
 
         $realtimePercentage = $('#realtime-percentage');
@@ -53,7 +114,13 @@ new function() {
 
         $shareResult = $('#share-result');
 
-        // scratch = $cover.wScratchPad(SCRATCHPAD_OPTIONS);
+        scratch = $cover.wScratchPad(SCRATCHPAD_OPTIONS);
+
+        buildCarousel(slides[0]);
+
+        $('.cover-video').on('click', playVideo);
+
+        $('.slides-set').on('click', updateCarousel);
     }
 
     function scratchDown() {
@@ -95,32 +162,31 @@ new function() {
         $('.game-result').addClass('game-result-show');
     }
 
-    function initOnepageScroll() {
-        var $window = $(window);
-        $('.map-scene')
-            .css({
-                'width': $window.width(),
-                'height': $window.height()
-            });
+    function playVideo() {
+        var html = 
+        '<div class="video-layer">' + 
+            '<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="872" height="400" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">' + 
+                '<source src="http://video-js.zencoder.com/oceans-clip.mp4" type=\'video/mp4\' />' + 
+                '<source src="http://video-js.zencoder.com/oceans-clip.webm" type=\'video/webm\' />' + 
+                '<source src="http://video-js.zencoder.com/oceans-clip.ogv" type=\'video/ogg\' />' + 
+            '</video>'
+        '</div>';
 
-        if (!onepageInitialized) {
-            onepage = $wrapper.onepage_scroll(ONPAGE_SCROLL_OPTIONS);
-            onepageInitialized = true;
-        }
+        $cover.append(html);
     }
 
-    function disablePageScroll() {
-        $('body')
-            .addClass('disabled-onepage-scroll');
+    function updateCarousel(e) {
+        var target = $(e.currentTarget);
 
-        onepageEnabled = false;
+        // How to destory.
+        buildCarousel(slides[target.index()]);
     }
 
-    function enablePageScroll() {
-        $('body')
-            .removeClass('disabled-onepage-scroll');
-
-        onepageEnabled = true;
+    function buildCarousel(slide) {
+        $('.slides-wrapper').html(_.template($('#carousel-template').html(), {
+            slides: slide,
+            id: 'carousel-generic-' + Math.random().toString(16).slice(2)
+        }));
     }
 
     function preventDefault(e) {
