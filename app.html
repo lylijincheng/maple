@@ -55,8 +55,12 @@
         </div>
     </div>
 
+    <div type="text/template" id="map-template" class="hidden">
+        <section class="card map" id="map"></section>
+    </div>
+
     <script type="text/template" id="scene-template">
-        <section class="card scene" style="background-image: url(./images/<%= background %>);">
+        <section class="card scene" id="scene" style="background-image: url(<%= background %>);">
             <div class="scene-header"><%= title %></div>
             <ul class="scene-intros" style="top: <%= top %>px;">
                 <% _.each(intros, function(intro) { %>

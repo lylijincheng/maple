@@ -12,10 +12,10 @@ new function() {
         'scratchDown': scratchDown
     };
 
-    var scenes = [
+    var scenes = [,,
         {
             background: '//placehold.it/1000x1000/0066ff',
-            title: 'Lorem ipsum dolor0.'
+            title: 'Lorem ipsum dolor1.',
             top: '200',
             intros: [
                 {
@@ -30,7 +30,40 @@ new function() {
         },
         {
             background: '//placehold.it/1000x1000/ff6600',
-            title: 'Lorem ipsum dolor1.'
+            title: 'Lorem ipsum dolor2.',
+            top: '300',
+            intros: [
+                {
+                    header: 'Lorem ipsum.1',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perferendis.' 
+                }
+            ]
+        },
+        {
+            background: '//placehold.it/1000x1000/ff6600',
+            title: 'Lorem ipsum dolor3.',
+            top: '300',
+            intros: [
+                {
+                    header: 'Lorem ipsum.1',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perferendis.' 
+                }
+            ]
+        },
+        {
+            background: '//placehold.it/1000x1000/ff6600',
+            title: 'Lorem ipsum dolor4.',
+            top: '300',
+            intros: [
+                {
+                    header: 'Lorem ipsum.1',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perferendis.' 
+                }
+            ]
+        },
+        {
+            background: '//placehold.it/1000x1000/ff6600',
+            title: 'Lorem ipsum dolor5.',
             top: '300',
             intros: [
                 {
@@ -48,6 +81,7 @@ new function() {
     var swapPercentage = 0;
 
     var $cover;
+    var $cards;
 
     var $realtimePercengate;
     var $realtimeSeconds;
@@ -64,6 +98,7 @@ new function() {
 
     function whenReady() {
         $cover = $('#cover');
+        $cards = $('#cards');
 
         $realtimePercentage = $('#realtime-percentage');
         $realtimeSeconds = $('#realtime-seconds');
@@ -112,17 +147,35 @@ new function() {
     }
 
     function initCardView() {
+        var mapView, scene0;
+
         if (!cardViewInitialized) {
             cardViewInitialized = true;
 
-            cardView = new CardView('#view', {
-                onUpdateContent: updateContent
-            });
+            setTimeout(function() {
+                mapView = $('#map-template').html();
+                scene0 = buildSceneHtml(scenes[2]);
+
+                // mapView = '<section class="card" id="map"></section>';
+                // scene1 = '<section class="card"></section>';
+
+                $cards.append(mapView).append(scene0);
+
+                // _.each(scenes.slice(2), function(scene, index) {
+                //     $cards.append(buildSceneHtml(scene));
+                // });
+
+                cardView = new CardView('#view', {
+                    dataset: scenes,
+                    onUpdateContent: updateContent
+                });
+            }, 0);
         }
     }
 
     function updateContent(el, data) {
-        console.log(el);
+        // el.id = cover | map | scene
+        console.log(el.id);
     }
 
     function buildSceneHtml(scene) {

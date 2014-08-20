@@ -163,14 +163,7 @@ new function() {
     }
 
     function playVideo() {
-        var html = 
-        '<div class="video-layer">' + 
-            '<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="872" height="400" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">' + 
-                '<source src="http://video-js.zencoder.com/oceans-clip.mp4" type=\'video/mp4\' />' + 
-                '<source src="http://video-js.zencoder.com/oceans-clip.webm" type=\'video/webm\' />' + 
-                '<source src="http://video-js.zencoder.com/oceans-clip.ogv" type=\'video/ogg\' />' + 
-            '</video>'
-        '</div>';
+        var html = $('#video-template').html();
 
         $cover.append(html);
     }
