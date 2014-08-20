@@ -9,7 +9,7 @@ h4,
 h5,
 h6, .fulfill, html,
 body,
-#one-page-wrapper, #cover {
+#view, #cards {
   margin: 0;
   padding: 0;
 }
@@ -33,7 +33,7 @@ a {
 /* line 29, ../sass/maple-app.sass */
 .fulfill, html,
 body,
-#one-page-wrapper, #cover {
+#view, #cards {
   width: 100%;
   height: 100%;
   display: block;
@@ -69,7 +69,7 @@ body,
 }
 
 /* line 65, ../sass/maple-app.sass */
-#cover {
+#cards {
   overflow: hidden;
 }
 
@@ -126,28 +126,21 @@ body,
 }
 
 /* line 111, ../sass/maple-app.sass */
-.map-scene {
+.card {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* line 116, ../sass/maple-app.sass */
-#map-1 {
-  background-image: url(http://placehold.it/1000x1000/ff6600);
+.scene {
+  color: white;
 }
-
-/* line 119, ../sass/maple-app.sass */
-#map-2 {
-  background-image: url(http://placehold.it/1000x1000/0066ff);
-}
-
-/* line 122, ../sass/maple-app.sass */
-#map-3 {
-  background-image: url(http://placehold.it/1000x1000/00ff66);
-}
-
-/* line 125, ../sass/maple-app.sass */
-#map-4 {
-  background-image: url(http://placehold.it/1000x1000/66ff00);
+/* line 120, ../sass/maple-app.sass */
+.scene .scene-header {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  padding: 0.8em;
+  border: 4px solid white;
 }

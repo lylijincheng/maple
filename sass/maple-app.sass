@@ -1,3 +1,4 @@
+@import compass/css3
 
 $font-face: "Helvetica Neue", "Helvetica", sans-serif
 
@@ -59,10 +60,10 @@ a
 
 html, 
 body,
-#one-page-wrapper
+#view
   @extend .fulfill
 
-#cover
+#cards
   @extend .fulfill
   overflow: hidden
 
@@ -108,19 +109,31 @@ body,
   &>div>span
     font-size: 1.125em
 
-.map-scene
+.card
   overflow: hidden
   background-repeat: no-repeat 
   background-size: cover
 
-#map-1
-  background-image: url(http://placehold.it/1000x1000/ff6600)
+.scene
+  color: #FFFFFF
+  overflow: hidden
+  +background-size(cover)
 
-#map-2
-  background-image: url(http://placehold.it/1000x1000/0066ff)
+  .scene-header
+    position: absolute
+    top: 100px
+    left: 20px
+    padding: .8em
+    border: 4px solid #FFFFFF
 
-#map-3
-  background-image: url(http://placehold.it/1000x1000/00ff66)
+  .scene-intros
 
-#map-4
-  background-image: url(http://placehold.it/1000x1000/66ff00)
+
+  .scene-block
+    background: rgba(0,0,0, .33)
+
+    h3
+      font-size: 1em
+
+    p
+      font-size: .825em

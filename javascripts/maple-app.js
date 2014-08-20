@@ -2,14 +2,6 @@ new function() {
 
     $(document).ready(whenReady);
 
-    var ONPAGE_SCROLL_OPTIONS = {
-        'easing': 'ease-out',
-        'pagination': true,
-        'animationTime': 600
-        // ,'loop': true
-        ,'keyboard': false
-    };
-
     var SCRATCHPAD_OPTIONS = {
         'size': 10,
         'bg': '#0066ff',
@@ -20,13 +12,41 @@ new function() {
         'scratchDown': scratchDown
     };
 
+    var scenes = [
+        {
+            background: '//placehold.it/1000x1000/0066ff',
+            title: 'Lorem ipsum dolor0.'
+            top: '200',
+            intros: [
+                {
+                    header: 'Lorem ipsum.',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perferendis.' 
+                }, 
+                {
+                    header: 'Lorem ipsum.',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perferendis.' 
+                }
+            ]
+        },
+        {
+            background: '//placehold.it/1000x1000/ff6600',
+            title: 'Lorem ipsum dolor1.'
+            top: '300',
+            intros: [
+                {
+                    header: 'Lorem ipsum.1',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perferendis.' 
+                }
+            ]
+        }
+    ];
+
     var WEIBO_APP_KEY = "3080877242";
 
     var swapTimer;
     var swapTime = 0;
     var swapPercentage = 0;
 
-    var $wrapper;
     var $cover;
 
     var $realtimePercengate;
@@ -36,14 +56,13 @@ new function() {
     var $shareResult;
 
     var scratch;
-    var onepage;
-    var onepageInitialized;
-    var onepageEnabled;
+    var cardView;
+
+    var cardViewInitialized;
 
     var totalSeconds;
 
     function whenReady() {
-        $wrapper = $('#one-page-wrapper');
         $cover = $('#cover');
 
         $realtimePercentage = $('#realtime-percentage');
@@ -52,7 +71,6 @@ new function() {
         $gamePercentage = $('#game-percentage');
 
         $shareResult = $('#share-result');
-
         scratch = $cover.wScratchPad(SCRATCHPAD_OPTIONS);
     }
 
@@ -82,10 +100,8 @@ new function() {
             $('.realtime-percentage').addClass('hidden');
 
             showResult();
-            
-            if (!onepageInitialized) {
-                initOnepageScroll();
-            }
+
+            initCardView();
         }
     }
 
@@ -95,32 +111,22 @@ new function() {
         $('.game-result').addClass('game-result-show');
     }
 
-    function initOnepageScroll() {
-        var $window = $(window);
-        $('.map-scene')
-            .css({
-                'width': $window.width(),
-                'height': $window.height()
-            });
+    function initCardView() {
+        if (!cardViewInitialized) {
+            cardViewInitialized = true;
 
-        if (!onepageInitialized) {
-            onepage = $wrapper.onepage_scroll(ONPAGE_SCROLL_OPTIONS);
-            onepageInitialized = true;
+            cardView = new CardView('#view', {
+                onUpdateContent: updateContent
+            });
         }
     }
 
-    function disablePageScroll() {
-        $('body')
-            .addClass('disabled-onepage-scroll');
-
-        onepageEnabled = false;
+    function updateContent(el, data) {
+        console.log(el);
     }
 
-    function enablePageScroll() {
-        $('body')
-            .removeClass('disabled-onepage-scroll');
-
-        onepageEnabled = true;
+    function buildSceneHtml(scene) {
+        return _.template($('#scene-template').html(), scene);
     }
 
     function preventDefault(e) {
