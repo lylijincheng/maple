@@ -5,7 +5,7 @@ new function() {
     var SCRATCHPAD_OPTIONS = {
         'size': 10,
         'bg': '#0066ff',
-        'fg': '#666666',
+        'fg': './images/maple-background-v.png',
         'realtime': true,
         'cursor': 'url("./images/leaf.png") 8 8, default',
         'scratchMove': scratchMove,
