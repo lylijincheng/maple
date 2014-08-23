@@ -1,6 +1,12 @@
 Reference
 - http://www.travelalberta.cn/mydreamvacation/m/show/index
 - http://www.hotoos.com/shijiebang3/
+- http://cubiq.org/cardview
+- http://weibo.com/ontariotravel?nick=%E5%AE%89%E5%A4%A7%E7%95%A5%E7%9C%81%E6%97%85%E6%B8%B8%E5%B1%80%E5%BE%AE%E5%8D%9A
+- http://www.travelalberta.cn/mydreamvacation/m/show/index
+- http://www.hellola.cn/
+- https://github.com/websanova/wScratchPad
+
 
 Todo 8/19
 PC是否Onepage scroll
@@ -16,6 +22,7 @@ Text
 
 微博发布
 http://jssdk.sinaapp.com/widget/publish.php
+
 WB2.anyWhere(function(W){
     W.widget.publish({
         'id' : 'wb_publish',
@@ -25,7 +32,6 @@ WB2.anyWhere(function(W){
         }
     });
 });
-
 视频播放
 https://github.com/videojs/video.js/blob/stable/docs/guides/setup.md
 

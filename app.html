@@ -1,76 +1,7 @@
-<!doctype html>
-
-<!-- http://lylijincheng.github.io/maple/app.html -->
-
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <title>枫叶黄金周</title>
-
-    <link rel="stylesheet" href="./stylesheets/normalize.css">
-    <link rel="stylesheet" href="./stylesheets/cardview.css">
-
-    <link rel="stylesheet" href="./stylesheets/maple-app.css">
-
-    <script src="./javascripts/jquery-1.11.1.js"></script>
-    <script src="./javascripts/underscore.js"></script>
-    <script src="./javascripts/wScratchPad.js"></script>
-    <script src="./javascripts/cardview.js"></script>
-
-    <script src="./javascripts/maple-app.js"></script>
-
-    <script async src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js"></script>
-</head>
-<body>
-    
-    <div id="view" class="view">
-        <div id="cards" class="cards">
-            <section class="card" id="cover">
-                <div class="realtime-percentage hidden">
+<!doctype html><!-- http://lylijincheng.github.io/maple/app.html --><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,minimal-ui"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><title>枫叶黄金周</title><link rel="stylesheet" href="dist/app-3ed906907e19a22bbb15578289d39211.css"></head><body><div id="view" class="view"><div id="cards" class="cards"><section class="card" id="cover"><!-- <div class="realtime-percentage hidden">
                     <div> <span id="realtime-seconds"></span> </div>
                     <div>
                         <p>还有 <span id="realtime-percentage"></span>% 的面积</p>
                         <p>加速擦除</p>
                     </div>
-                </div>
-                <div class="game-result">
-                    <div>
-                        扫枫用时 <span id="game-result"></span><br>
-                        恭喜！比 <span id="game-percentage"></span> 的用户都快
-                    </div>
-                    <div>
-                        <a id="share-result" class="button" href="javascript:;">分享并抽奖</a>
-                    </div>
-                    <div>
-                        <span class="up-arrow"></span>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <div type="text/template" id="map-template" class="hidden">
-        <section class="card map" id="map"></section>
-    </div>
-
-    <script type="text/template" id="scene-template">
-        <section class="card scene" id="scene" style="background-image: url(<%= background %>);">
-            <div class="scene-header"><%= title %></div>
-            <ul class="scene-intros" style="top: <%= top %>px;">
-                <% _.each(intros, function(intro) { %>
-                <li class="scene-block">
-                    <h3><%= intro.header %></h3>
-                    <p><%= intro.content %></p>
-                </li>
-                <% }); %>
-            </ul>
-        </section>
-    </script>
-</body>
-</html>
+                </div> --><div class="game-result"><div>扫枫用时 <span id="game-result"></span><br>恭喜！比 <span id="game-percentage"></span> 的用户都快</div><div><a id="share-result" class="button" href="javascript:;">分享并抽奖</a></div><div><span class="up-arrow"></span></div></div></section></div></div><div type="text/template" id="map-template" class="hidden"><section class="card map" id="map"></section></div><script type="text/template" id="scene-template"><section class="card scene" id="scene" style="background-image: url(<%= background %>)"><div class="scene-header"><%= title %></div><ul class="scene-intros" style="top: <%= top %>px"><% _.each(intros, function(intro) { %><li class="scene-block"><h3><%= intro.header %></h3><p><%= intro.content %></p></li><% }); %></ul></section></script><script src="dist/app-3ed906907e19a22bbb15578289d39211.js"></script><script async src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3080877242"></script></body></html>

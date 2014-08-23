@@ -1,0 +1,1222 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>video.js/vjs.svg at stable · videojs/video.js</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="videojs/video.js" name="twitter:title" /><meta content="video.js - Video.js - open source HTML5 &amp;amp; Flash video player" name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/3287189?v=2&amp;s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/3287189?v=2&amp;s=400" property="og:image" /><meta content="videojs/video.js" property="og:title" /><meta content="https://github.com/videojs/video.js" property="og:url" /><meta content="video.js - Video.js - open source HTML5 &amp; Flash video player" property="og:description" />
+
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    <link rel="xhr-socket" href="/_sockets">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="DE813012:4A6C:16D6FFF3:53F78B11" name="octolytics-dimension-request_id" /><meta content="1305660" name="octolytics-actor-id" /><meta content="lylijincheng" name="octolytics-actor-login" /><meta content="e82f2049d4d731d48b994a2a665decab34823e02b155fe6c01c78fa40fc6669f" name="octolytics-actor-hash" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="8cFHoouW+Mqz4k/iT+fuCJwUy26cp9LOJSgzm/zhUhspllzDPJhBnhPMcLOI20F0S5YJ9CxbqjGQPxaN46iA3Q==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-0ff84fd746ec438ae838fda906146542b65f0596.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-a4a53418cdc0805f3fd16f3a679b2f42615f7a6c.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="8e0bc18df2c07e81439868a6812a950e">
+
+      
+  <meta name="description" content="video.js - Video.js - open source HTML5 &amp; Flash video player">
+
+
+  <meta content="3287189" name="octolytics-dimension-user_id" /><meta content="videojs" name="octolytics-dimension-user_login" /><meta content="667006" name="octolytics-dimension-repository_id" /><meta content="videojs/video.js" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="667006" name="octolytics-dimension-repository_network_root_id" /><meta content="videojs/video.js" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/videojs/video.js/commits/stable.atom" rel="alternate" title="Recent Commits to video.js:stable" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_in  env-production windows vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      <div class="header header-logged-in true">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" ga-data-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+
+      <div class="site-search repo-scope js-site-search">
+          <form accept-charset="UTF-8" action="/videojs/video.js/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/videojs/video.js/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class="js-site-search-field is-clearable"
+    data-hotkey="s"
+    name="q"
+    placeholder="Search"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+      </div>
+      <ul class="header-nav left">
+        <li class="header-nav-item explore" data-ga-click="Header, go to explore, text:explore">
+          <a class="header-nav-link" href="/explore">Explore</a>
+        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="Header, go to blog, text:blog">Blog</a>
+          </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+        </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name" href="/lylijincheng" data-ga-click="Header, go to profile, text:username">
+      <img alt="lylijincheng" class="avatar" data-user="1305660" height="20" src="https://avatars2.githubusercontent.com/u/1305660?v=2&amp;s=40" width="20" />
+      <span class="css-truncate">
+        <span class="css-truncate-target">lylijincheng</span>
+      </span>
+    </a>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link js-menu-target tooltipped tooltipped-s" href="#" aria-label="Create new..." data-ga-click="Header, create new, icon:add">
+      <span class="octicon octicon-plus"></span>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      
+<ul class="dropdown-menu">
+  <li>
+    <a href="/new"><span class="octicon octicon-repo"></span> New repository</a>
+  </li>
+  <li>
+    <a href="/organizations/new"><span class="octicon octicon-organization"></span> New organization</a>
+  </li>
+
+
+    <li class="dropdown-divider"></li>
+    <li class="dropdown-header">
+      <span title="videojs/video.js">This repository</span>
+    </li>
+      <li>
+        <a href="/videojs/video.js/issues/new"><span class="octicon octicon-issue-opened"></span> New issue</a>
+      </li>
+</ul>
+
+    </div>
+  </li>
+
+  <li class="header-nav-item">
+        <a href="/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s" data-ga-click="Header, go to notifications, icon:read" data-hotkey="g n">
+        <span class="mail-status all-read"></span>
+        <span class="octicon octicon-inbox"></span>
+</a>
+  </li>
+
+  <li class="header-nav-item">
+    <a class="header-nav-link tooltipped tooltipped-s" href="/settings/profile" id="account_settings" aria-label="Settings" data-ga-click="Header, go to settings, icon:settings">
+      <span class="octicon octicon-gear"></span>
+    </a>
+  </li>
+
+  <li class="header-nav-item">
+    <form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QqUIJ/cwjuhY9rPB8zdtPJmW1qEw2QFfnvvV9Zko8tKSWXkUac1EQgwW1gWuFtk3QCjEQNnR6qiCFEVHO2+6Wg==" /></div>
+      <button class="header-nav-link sign-out-button tooltipped tooltipped-s" aria-label="Sign out" data-ga-click="Header, sign out, icon:logout">
+        <span class="octicon octicon-sign-out"></span>
+      </button>
+</form>  </li>
+
+</ul>
+
+
+    
+  </div>
+</div>
+
+      
+
+        
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+    <li class="subscription">
+      <form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="cQb1MQHScr1Xi22NEB78SltvOwdvkjXPRLJEoghIBR+y4LmHM9tuLRq5HYEJenoFTOGMkwFeF1b6en1ohCBehg==" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="667006" />
+
+    <div class="select-menu js-menu-container js-select-menu">
+      <a class="social-count js-social-count" href="/videojs/video.js/watchers">
+        473
+      </a>
+      <a href="/videojs/video.js/subscription"
+        class="minibutton select-menu-button with-count js-menu-target" role="button" tabindex="0" aria-haspopup="true">
+        <span class="js-select-button">
+          <span class="octicon octicon-eye"></span>
+          Watch
+        </span>
+      </a>
+
+      <div class="select-menu-modal-holder">
+        <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+            <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-list js-navigation-container" role="menu">
+
+            <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                <h4>Not watching</h4>
+                <span class="description">Be notified when participating or @mentioned.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye"></span>
+                  Watch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                <h4>Watching</h4>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye"></span>
+                  Unwatch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_ignore" name="do" type="radio" value="ignore" />
+                <h4>Ignoring</h4>
+                <span class="description">Never be notified.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-mute"></span>
+                  Stop ignoring
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+</form>
+    </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container on">
+
+    <form accept-charset="UTF-8" action="/videojs/video.js/unstar" class="js-toggler-form starred js-unstar-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="cRD5y1x7GVSNyHialmFVrF7wNe9l0SRLggL7qcwno3rxwdIZkhTvkhndzu1+JueCB8Ne5S7hEA6ZbiXp/f9nRQ==" /></div>
+      <button
+        class="minibutton with-count js-toggler-target star-button"
+        aria-label="Unstar this repository" title="Unstar videojs/video.js">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/videojs/video.js/stargazers">
+          6,770
+        </a>
+</form>
+    <form accept-charset="UTF-8" action="/videojs/video.js/star" class="js-toggler-form unstarred js-star-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="a/quFBjaVI0CgG2hxgQTnNhy6sk/zUZn6wfZ+5mp9MJRutvqC56f2Kz6X2SL2X8t8eMuDosN2SUQSS7jNJRZxA==" /></div>
+      <button
+        class="minibutton with-count js-toggler-target star-button"
+        aria-label="Star this repository" title="Star videojs/video.js">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/videojs/video.js/stargazers">
+          6,770
+        </a>
+</form>  </div>
+
+  </li>
+
+
+        <li>
+          <a href="/videojs/video.js/fork" class="minibutton with-count js-toggler-target fork-button tooltipped-n" title="Fork your own copy of videojs/video.js to your account" aria-label="Fork your own copy of videojs/video.js to your account" rel="nofollow" data-method="post">
+            <span class="octicon octicon-repo-forked"></span>
+            Fork
+          </a>
+          <a href="/videojs/video.js/network" class="social-count">1,722</a>
+        </li>
+
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/videojs" class="url fn" itemprop="url" rel="author"><span itemprop="title">videojs</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/videojs/video.js" class="js-current-repository js-repo-home-link">video.js</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders" data-issue-count-url="/videojs/video.js/issues/counts">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/videojs/video.js/tree/stable" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /videojs/video.js/tree/stable">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/videojs/video.js/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /videojs/video.js/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class="js-issue-replace-counter"></span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/videojs/video.js/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g p" data-selected-links="repo_pulls /videojs/video.js/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class="js-pull-replace-counter"></span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+        <li class="tooltipped tooltipped-w" aria-label="Wiki">
+          <a href="/videojs/video.js/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g w" data-selected-links="repo_wiki /videojs/video.js/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/videojs/video.js/pulse/weekly" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /videojs/video.js/pulse/weekly">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/videojs/video.js/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /videojs/video.js/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="input-group">
+    <input type="text" class="input-mini input-monospace js-url-field"
+           value="https://github.com/videojs/video.js.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/videojs/video.js.git" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="ssh"
+  data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone">
+  <h3><strong>SSH</strong> clone URL</h3>
+  <div class="input-group">
+    <input type="text" class="input-mini input-monospace js-url-field"
+           value="git@github.com:videojs/video.js.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="git@github.com:videojs/video.js.git" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="input-group">
+    <input type="text" class="input-mini input-monospace js-url-field"
+           value="https://github.com/videojs/video.js" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/videojs/video.js" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>,
+      <a href="#" class="js-clone-selector" data-protocol="ssh">SSH</a>,
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+  <a href="github-windows://openRepo/https://github.com/videojs/video.js" class="minibutton sidebar-button" title="Save videojs/video.js to your computer and use it in GitHub Desktop." aria-label="Save videojs/video.js to your computer and use it in GitHub Desktop.">
+    <span class="octicon octicon-device-desktop"></span>
+    Clone in Desktop
+  </a>
+
+                <a href="/videojs/video.js/archive/stable.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download videojs/video.js as a zip file"
+                   title="Download videojs/video.js as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<a href="/videojs/video.js/blob/760eb308db573022d6a96ee67bed9d205cde2aca/dist/video-js/font/vjs.svg" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:32e3595d1f39b6513813b6f79125da30 -->
+
+<div class="file-navigation">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="minibutton select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="stable"
+    title="stable"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">stable</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/bower-release/dist/video-js/font/vjs.svg"
+                 data-name="bower-release"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="bower-release">bower-release</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/feature/hls/dist/video-js/font/vjs.svg"
+                 data-name="feature/hls"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="feature/hls">feature/hls</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/feature/lib-changes/dist/video-js/font/vjs.svg"
+                 data-name="feature/lib-changes"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="feature/lib-changes">feature/lib-changes</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/gh-pages/dist/video-js/font/vjs.svg"
+                 data-name="gh-pages"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="gh-pages">gh-pages</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/master/dist/video-js/font/vjs.svg"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/patch/ie9-no-media/dist/video-js/font/vjs.svg"
+                 data-name="patch/ie9-no-media"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="patch/ie9-no-media">patch/ie9-no-media</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/release/4-1/dist/video-js/font/vjs.svg"
+                 data-name="release/4-1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="release/4-1">release/4-1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/release/4.2.0/dist/video-js/font/vjs.svg"
+                 data-name="release/4.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="release/4.2.0">release/4.2.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/blob/stable/dist/video-js/font/vjs.svg"
+                 data-name="stable"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="stable">stable</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.7.3/dist/video-js/font/vjs.svg"
+                 data-name="v4.7.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.7.3">v4.7.3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.7.2/dist/video-js/font/vjs.svg"
+                 data-name="v4.7.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.7.2">v4.7.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.7.1/dist/video-js/font/vjs.svg"
+                 data-name="v4.7.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.7.1">v4.7.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.7.0/dist/video-js/font/vjs.svg"
+                 data-name="v4.7.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.7.0">v4.7.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.6.4/dist/video-js/font/vjs.svg"
+                 data-name="v4.6.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.6.4">v4.6.4</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.6.3/dist/video-js/font/vjs.svg"
+                 data-name="v4.6.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.6.3">v4.6.3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.6.2/dist/video-js/font/vjs.svg"
+                 data-name="v4.6.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.6.2">v4.6.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.6.1/dist/video-js/font/vjs.svg"
+                 data-name="v4.6.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.6.1">v4.6.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.6.0/dist/video-js/font/vjs.svg"
+                 data-name="v4.6.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.6.0">v4.6.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.5.2/dist/video-js/font/vjs.svg"
+                 data-name="v4.5.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.5.2">v4.5.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.5.1/dist/video-js/font/vjs.svg"
+                 data-name="v4.5.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.5.1">v4.5.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.5.0/dist/video-js/font/vjs.svg"
+                 data-name="v4.5.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.5.0">v4.5.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.4.3/dist/video-js/font/vjs.svg"
+                 data-name="v4.4.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.4.3">v4.4.3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.4.2/dist/video-js/font/vjs.svg"
+                 data-name="v4.4.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.4.2">v4.4.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.4.1/dist/video-js/font/vjs.svg"
+                 data-name="v4.4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.4.1">v4.4.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.4.0/dist/video-js/font/vjs.svg"
+                 data-name="v4.4.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.4.0">v4.4.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.3.0/dist/video-js/font/vjs.svg"
+                 data-name="v4.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.3.0">v4.3.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.2.2/dist/video-js/font/vjs.svg"
+                 data-name="v4.2.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.2.2">v4.2.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.2.1/dist/video-js/font/vjs.svg"
+                 data-name="v4.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.2.1">v4.2.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.2.0/dist/video-js/font/vjs.svg"
+                 data-name="v4.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.2.0">v4.2.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.1.0/dist/video-js/font/vjs.svg"
+                 data-name="v4.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.1.0">v4.1.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.0.4/dist/video-js/font/vjs.svg"
+                 data-name="v4.0.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.0.4">v4.0.4</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.0.3/dist/video-js/font/vjs.svg"
+                 data-name="v4.0.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.0.3">v4.0.3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.0.2/dist/video-js/font/vjs.svg"
+                 data-name="v4.0.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.0.2">v4.0.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v4.0.1/dist/video-js/font/vjs.svg"
+                 data-name="v4.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v4.0.1">v4.0.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v3.0b/dist/video-js/font/vjs.svg"
+                 data-name="v3.0b"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v3.0b">v3.0b</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/v2.0.3/dist/video-js/font/vjs.svg"
+                 data-name="v2.0.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v2.0.3">v2.0.3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/4.0.1/dist/video-js/font/vjs.svg"
+                 data-name="4.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.0.1">4.0.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/4.0.0/dist/video-js/font/vjs.svg"
+                 data-name="4.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.0.0">4.0.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.2.3/dist/video-js/font/vjs.svg"
+                 data-name="3.2.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.3">3.2.3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.2.2/dist/video-js/font/vjs.svg"
+                 data-name="3.2.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.2">3.2.2</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.2.1/dist/video-js/font/vjs.svg"
+                 data-name="3.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.1">3.2.1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.2.0/dist/video-js/font/vjs.svg"
+                 data-name="3.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.0">3.2.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.1.0/dist/video-js/font/vjs.svg"
+                 data-name="3.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.0">3.1.0</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.0r1/dist/video-js/font/vjs.svg"
+                 data-name="3.0r1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0r1">3.0r1</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.0.8/dist/video-js/font/vjs.svg"
+                 data-name="3.0.8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.8">3.0.8</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.0.7/dist/video-js/font/vjs.svg"
+                 data-name="3.0.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.7">3.0.7</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.0.6/dist/video-js/font/vjs.svg"
+                 data-name="3.0.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.6">3.0.6</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.0.5/dist/video-js/font/vjs.svg"
+                 data-name="3.0.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.5">3.0.5</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.0.4/dist/video-js/font/vjs.svg"
+                 data-name="3.0.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.4">3.0.4</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/videojs/video.js/tree/3.0.3/dist/video-js/font/vjs.svg"
+                 data-name="3.0.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.3">3.0.3</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+  <div class="button-group right">
+    <a href="/videojs/video.js/find/stable"
+          class="js-show-file-finder minibutton empty-icon tooltipped tooltipped-s"
+          data-pjax
+          data-hotkey="t"
+          aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <button class="js-zeroclipboard minibutton zeroclipboard-button"
+          data-clipboard-text="dist/video-js/font/vjs.svg"
+          aria-label="Copy to clipboard"
+          data-copied-hint="Copied!">
+      <span class="octicon octicon-clippy"></span>
+    </button>
+  </div>
+
+  <div class="breadcrumb">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/videojs/video.js/tree/stable" class="" data-branch="stable" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">video.js</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/videojs/video.js/tree/stable/dist" class="" data-branch="stable" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">dist</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/videojs/video.js/tree/stable/dist/video-js" class="" data-branch="stable" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">video-js</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/videojs/video.js/tree/stable/dist/video-js/font" class="" data-branch="stable" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">font</span></a></span><span class="separator"> / </span><strong class="final-path">vjs.svg</strong>
+  </div>
+</div>
+
+
+  <div class="commit commit-loader file-history-tease js-deferred-content" data-url="/videojs/video.js/contributors/stable/dist/video-js/font/vjs.svg">
+    Fetching contributors…
+
+    <div class="participation">
+      <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" /></p>
+      <p class="loader-error">Cannot retrieve contributors at this time</p>
+    </div>
+  </div>
+
+<div class="file-box">
+  <div class="file">
+    <div class="meta clearfix">
+      <div class="info file-name">
+          <span>28 lines (28 sloc)</span>
+          <span class="meta-divider"></span>
+        <span>10.356 kb</span>
+      </div>
+      <div class="actions">
+        <div class="button-group">
+          <a href="/videojs/video.js/raw/stable/dist/video-js/font/vjs.svg" class="minibutton " id="raw-url">Raw</a>
+            <a href="/videojs/video.js/blame/stable/dist/video-js/font/vjs.svg" class="minibutton js-update-url-with-hash">Blame</a>
+          <a href="/videojs/video.js/commits/stable/dist/video-js/font/vjs.svg" class="minibutton " rel="nofollow">History</a>
+        </div><!-- /.button-group -->
+
+          <a class="octicon-button tooltipped tooltipped-nw"
+             href="github-windows://openRepo/https://github.com/videojs/video.js?branch=stable&amp;filepath=dist%2Fvideo-js%2Ffont%2Fvjs.svg" aria-label="Open this file in GitHub for Windows">
+              <span class="octicon octicon-device-desktop"></span>
+          </a>
+
+              <a class="octicon-button tooltipped tooltipped-n js-update-url-with-hash"
+                 aria-label="Clicking this button will fork this project so you can edit the file"
+                 href="/videojs/video.js/edit/stable/dist/video-js/font/vjs.svg"
+                 data-method="post" rel="nofollow"><span class="octicon octicon-pencil"></span></a>
+
+            <a class="octicon-button danger tooltipped tooltipped-s"
+               href="/videojs/video.js/delete/stable/dist/video-js/font/vjs.svg"
+               aria-label="Fork this project and delete file"
+               data-method="post" data-test-id="delete-blob-file" rel="nofollow">
+          <span class="octicon octicon-trashcan"></span>
+        </a>
+      </div><!-- /.actions -->
+    </div>
+      
+  <div class="blob-wrapper data type-xml">
+      <table class="highlight tab-size-8 js-file-line-container">
+      <tr>
+        <td id="L1" class="blob-line-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-line-code js-file-line"><span class="cp">&lt;?xml version=&quot;1.0&quot; standalone=&quot;no&quot;?&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-line-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-line-code js-file-line"><span class="cp">&lt;!DOCTYPE svg PUBLIC &quot;-//W3C//DTD SVG 1.1//EN&quot; &quot;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&quot; &gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-line-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-line-code js-file-line"><span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span><span class="nt">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-line-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-line-code js-file-line"><span class="nt">&lt;metadata&gt;</span>Generated by IcoMoon<span class="nt">&lt;/metadata&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-line-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-line-code js-file-line"><span class="nt">&lt;defs&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-line-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-line-code js-file-line"><span class="nt">&lt;font</span> <span class="na">id=</span><span class="s">&quot;icomoon&quot;</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;1024&quot;</span><span class="nt">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-line-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-line-code js-file-line"><span class="nt">&lt;font-face</span> <span class="na">units-per-em=</span><span class="s">&quot;1024&quot;</span> <span class="na">ascent=</span><span class="s">&quot;960&quot;</span> <span class="na">descent=</span><span class="s">&quot;-64&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-line-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-line-code js-file-line"><span class="nt">&lt;missing-glyph</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;1024&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-line-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#x20;&quot;</span> <span class="na">d=</span><span class="s">&quot;&quot;</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;512&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-line-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe000;&quot;</span> <span class="na">d=</span><span class="s">&quot;M1024 960v-416l-160 160-192-192-96 96 192 192-160 160zM448 288l-192-192 160-160h-416v416l160-160 192 192z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-line-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe001;&quot;</span> <span class="na">d=</span><span class="s">&quot;M192 832l640-384-640-384z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-line-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe002;&quot;</span> <span class="na">d=</span><span class="s">&quot;M128 832h320v-768h-320zM576 832h320v-768h-320z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-line-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe003;&quot;</span> <span class="na">d=</span><span class="s">&quot;M401.332 881.332c25.668 25.668 46.668 16.968 46.668-19.332v-828c0-36.3-21-44.998-46.668-19.33l-241.332 241.33h-160v384h160l241.332 241.332z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-line-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe004;&quot;</span> <span class="na">d=</span><span class="s">&quot;M549.020 218.98c-12.286 0-24.568 4.686-33.942 14.058-18.746 18.746-18.746 49.136 0 67.882 81.1 81.1 81.1 213.058 0 294.156-18.746 18.746-18.746 49.138 0 67.882 18.746 18.744 49.136 18.744 67.882 0 118.53-118.53 118.53-311.392 0-429.922-9.372-9.37-21.656-14.056-33.94-14.056zM401.332 881.332c25.668 25.668 46.668 16.968 46.668-19.332v-828c0-36.3-21-44.998-46.668-19.33l-241.332 241.33h-160v384h160l241.332 241.332z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-line-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe005;&quot;</span> <span class="na">d=</span><span class="s">&quot;M719.53 128.47c-12.286 0-24.568 4.686-33.942 14.058-18.744 18.744-18.744 49.136 0 67.882 131.006 131.006 131.006 344.17 0 475.176-18.744 18.746-18.744 49.138 0 67.882 18.744 18.742 49.138 18.744 67.882 0 81.594-81.592 126.53-190.076 126.53-305.468 0-115.39-44.936-223.876-126.53-305.47-9.372-9.374-21.656-14.060-33.94-14.060zM549.020 218.98c-12.286 0-24.568 4.686-33.942 14.058-18.746 18.746-18.746 49.136 0 67.882 81.1 81.1 81.1 213.058 0 294.156-18.746 18.746-18.746 49.138 0 67.882 18.746 18.744 49.136 18.744 67.882 0 118.53-118.53 118.53-311.392 0-429.922-9.372-9.37-21.656-14.056-33.94-14.056zM401.332 881.332c25.668 25.668 46.668 16.968 46.668-19.332v-828c0-36.3-21-44.998-46.668-19.33l-241.332 241.33h-160v384h160l241.332 241.332z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-line-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe006;&quot;</span> <span class="na">d=</span><span class="s">&quot;M890.040 37.96c-12.286 0-24.568 4.686-33.942 14.058-18.744 18.746-18.744 49.136 0 67.882 87.638 87.642 135.904 204.16 135.904 328.1 0 123.938-48.266 240.458-135.904 328.098-18.744 18.746-18.744 49.138 0 67.882 18.744 18.744 49.138 18.744 67.882 0 105.77-105.772 164.022-246.4 164.022-395.98 0-149.582-58.252-290.208-164.022-395.98-9.372-9.374-21.656-14.060-33.94-14.060zM719.53 128.47c-12.286 0-24.568 4.686-33.942 14.058-18.744 18.744-18.744 49.136 0 67.882 131.006 131.006 131.006 344.17 0 475.176-18.744 18.746-18.744 49.138 0 67.882 18.744 18.742 49.138 18.744 67.882 0 81.594-81.592 126.53-190.076 126.53-305.468 0-115.39-44.936-223.876-126.53-305.47-9.372-9.374-21.656-14.060-33.94-14.060zM549.020 218.98c-12.286 0-24.568 4.686-33.942 14.058-18.746 18.746-18.746 49.136 0 67.882 81.1 81.1 81.1 213.058 0 294.156-18.746 18.746-18.746 49.138 0 67.882 18.746 18.744 49.136 18.744 67.882 0 118.53-118.53 118.53-311.392 0-429.922-9.372-9.37-21.656-14.056-33.94-14.056zM401.332 881.332c25.668 25.668 46.668 16.968 46.668-19.332v-828c0-36.3-21-44.998-46.668-19.33l-241.332 241.33h-160v384h160l241.332 241.332z&quot;</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;1088&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-line-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe007;&quot;</span> <span class="na">d=</span><span class="s">&quot;M512 960l-320-512 320-512 320 512z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-line-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe008;&quot;</span> <span class="na">d=</span><span class="s">&quot;M0 960h1374.316v-1030.414h-1374.316v1030.414zM1245.462 449.276c-1.706 180.052-8.542 258.568-51.2 314.036-7.68 11.946-22.186 18.772-34.132 27.296-41.814 30.73-238.944 41.814-467.636 41.814-228.702 0-435.21-11.084-476.17-41.814-12.8-8.524-27.316-15.35-35.84-27.296-41.822-55.468-47.786-133.984-50.346-314.036 2.56-180.062 8.524-258.57 50.346-314.036 8.524-12.8 23.040-18.774 35.84-27.306 40.96-31.574 247.468-41.814 476.17-43.52 228.692 1.706 425.822 11.946 467.636 43.52 11.946 8.532 26.452 14.506 34.132 27.306 42.658 55.466 49.494 133.974 51.2 314.036zM662.358 495.904c-11.58 140.898-86.51 223.906-220.556 223.906-122.458 0-218.722-110.432-218.722-287.88 0-178.212 87.73-289.396 232.734-289.396 115.766 0 196.798 85.298 209.588 226.95h-138.302c-5.48-52.548-27.414-92.914-73.72-92.914-73.108 0-86.51 72.354-86.51 149.27 0 105.868 30.46 159.932 81.032 159.932 45.082 0 73.718-32.75 77.976-89.868h136.48zM1140.026 495.904c-11.57 140.898-86.51 223.906-220.546 223.906-122.466 0-218.722-110.432-218.722-287.88 0-178.212 87.73-289.396 232.734-289.396 115.758 0 196.788 85.298 209.58 226.95h-138.304c-5.47-52.548-27.404-92.914-73.71-92.914-73.116 0-86.518 72.354-86.518 149.27 0 105.868 30.468 159.932 81.030 159.932 45.084 0 73.728-32.75 77.986-89.868h136.47z&quot;</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;1374&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-line-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe009;&quot;</span> <span class="na">d=</span><span class="s">&quot;M128 832h768v-768h-768z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-line-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe00a;&quot;</span> <span class="na">d=</span><span class="s">&quot;M384 832c0-70.692 57.308-128 128-128s128 57.308 128 128c0 70.692-57.308 128-128 128-70.692 0-128-57.308-128-128zM655.53 719.53c0-70.692 57.308-128 128-128s128 57.308 128 128c0 70.692-57.308 128-128 128-70.692 0-128-57.308-128-128zM832 448c0-35.346 28.654-64 64-64s64 28.654 64 64c0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64zM719.53 176.47c0-35.346 28.654-64 64-64s64 28.654 64 64c0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64zM448.002 64c0 0 0 0 0 0 0-35.346 28.654-64 64-64 35.346 0 64 28.654 64 64 0 0 0 0 0 0 0 0 0 0 0 0 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64s0 0 0 0zM176.472 176.47c0 0 0 0 0 0 0-35.346 28.654-64 64-64 35.346 0 64 28.654 64 64 0 0 0 0 0 0 0 0 0 0 0 0 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64s0 0 0 0zM144.472 719.53c0 0 0 0 0 0 0-53.019 42.981-96 96-96 53.019 0 96 42.981 96 96 0 0 0 0 0 0 0 0 0 0 0 0 0 53.019-42.981 96-96 96-53.019 0-96-42.981-96-96s0 0 0 0zM56 448c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.765-32.235 72-72 72-39.765 0-72-32.235-72-72z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-line-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe00b;&quot;</span> <span class="na">d=</span><span class="s">&quot;M448 384v-416l-160 160-192-192-96 96 192 192-160 160zM1024 864l-192-192 160-160h-416v416l160-160 192 192z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-line-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe00c;&quot;</span> <span class="na">d=</span><span class="s">&quot;M512 896c282.77 0 512-186.25 512-416 0-229.752-229.23-416-512-416-27.156 0-53.81 1.734-79.824 5.044-109.978-109.978-241.25-129.7-368.176-132.596v26.916c68.536 33.578 128 94.74 128 164.636 0 9.754-0.758 19.33-2.164 28.696-115.796 76.264-189.836 192.754-189.836 323.304 0 229.75 229.23 416 512 416z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-line-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe00d;&quot;</span> <span class="na">d=</span><span class="s">&quot;M512 960c-282.77 0-512-229.23-512-512s229.23-512 512-512 512 229.23 512 512-229.23 512-512 512zM512 704c141.384 0 256-114.616 256-256s-114.616-256-256-256-256 114.616-256 256 114.616 256 256 256zM817.47 142.53c-81.594-81.594-190.080-126.53-305.47-126.53-115.392 0-223.876 44.936-305.47 126.53-81.594 81.594-126.53 190.078-126.53 305.47 0 115.39 44.936 223.876 126.53 305.47l67.882-67.882c0 0 0 0 0 0-131.006-131.006-131.006-344.17 0-475.176 63.462-63.462 147.838-98.412 237.588-98.412 89.748 0 174.124 34.95 237.588 98.412 131.006 131.006 131.006 344.168 0 475.176l67.882 67.882c81.594-81.594 126.53-190.080 126.53-305.47 0-115.392-44.936-223.876-126.53-305.47z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-line-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe00e;&quot;</span> <span class="na">d=</span><span class="s">&quot;M864 256c-45.16 0-85.92-18.738-115.012-48.83l-431.004 215.502c1.314 8.252 2.016 16.706 2.016 25.328s-0.702 17.076-2.016 25.326l431.004 215.502c29.092-30.090 69.852-48.828 115.012-48.828 88.366 0 160 71.634 160 160s-71.634 160-160 160-160-71.634-160-160c0-8.622 0.704-17.076 2.016-25.326l-431.004-215.504c-29.092 30.090-69.852 48.83-115.012 48.83-88.366 0-160-71.636-160-160 0-88.368 71.634-160 160-160 45.16 0 85.92 18.738 115.012 48.828l431.004-215.502c-1.312-8.25-2.016-16.704-2.016-25.326 0-88.368 71.634-160 160-160s160 71.632 160 160c0 88.364-71.634 160-160 160z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-line-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe01e;&quot;</span> <span class="na">d=</span><span class="s">&quot;M1024 448c-1.278 66.862-15.784 133.516-42.576 194.462-26.704 61-65.462 116.258-113.042 161.92-47.552 45.696-103.944 81.82-164.984 105.652-61.004 23.924-126.596 35.352-191.398 33.966-64.81-1.282-129.332-15.374-188.334-41.356-59.048-25.896-112.542-63.47-156.734-109.576-44.224-46.082-79.16-100.708-102.186-159.798-23.114-59.062-34.128-122.52-32.746-185.27 1.286-62.76 14.964-125.148 40.134-182.206 25.088-57.1 61.476-108.828 106.11-151.548 44.61-42.754 97.472-76.504 154.614-98.72 57.118-22.304 118.446-32.902 179.142-31.526 60.708 1.29 120.962 14.554 176.076 38.914 55.15 24.282 105.116 59.48 146.366 102.644 41.282 43.14 73.844 94.236 95.254 149.43 13.034 33.458 21.88 68.4 26.542 103.798 1.246-0.072 2.498-0.12 3.762-0.12 35.346 0 64 28.652 64 64 0 1.796-0.094 3.572-0.238 5.332h0.238zM922.306 278.052c-23.472-53.202-57.484-101.4-99.178-141.18-41.67-39.81-91-71.186-144.244-91.79-53.228-20.678-110.29-30.452-166.884-29.082-56.604 1.298-112.596 13.736-163.82 36.474-51.25 22.666-97.684 55.49-135.994 95.712-38.338 40.198-68.528 87.764-88.322 139.058-19.87 51.284-29.228 106.214-27.864 160.756 1.302 54.552 13.328 108.412 35.254 157.69 21.858 49.3 53.498 93.97 92.246 130.81 38.73 36.868 84.53 65.87 133.874 84.856 49.338 19.060 102.136 28.006 154.626 26.644 52.5-1.306 104.228-12.918 151.562-34.034 47.352-21.050 90.256-51.502 125.624-88.782 35.396-37.258 63.21-81.294 81.39-128.688 18.248-47.392 26.782-98.058 25.424-148.496h0.238c-0.144-1.76-0.238-3.536-0.238-5.332 0-33.012 24.992-60.174 57.086-63.624-6.224-34.822-16.53-68.818-30.78-100.992z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-line-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe01f;&quot;</span> <span class="na">d=</span><span class="s">&quot;M512 960c-278.748 0-505.458-222.762-511.848-499.974 5.92 241.864 189.832 435.974 415.848 435.974 229.75 0 416-200.576 416-448 0-53.020 42.98-96 96-96 53.020 0 96 42.98 96 96 0 282.77-229.23 512-512 512zM512-64c278.748 0 505.458 222.762 511.848 499.974-5.92-241.864-189.832-435.974-415.848-435.974-229.75 0-416 200.576-416 448 0 53.020-42.98 96-96 96-53.020 0-96-42.98-96-96 0-282.77 229.23-512 512-512z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-line-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-line-code js-file-line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe600;&quot;</span> <span class="na">d=</span><span class="s">&quot;M1024 351.906v192.188l-146.774 24.462c-5.958 18.132-13.222 35.668-21.694 52.5l86.454 121.034-135.896 135.898-120.826-86.304c-16.91 8.554-34.538 15.888-52.768 21.902l-24.402 146.414h-192.188l-24.402-146.416c-18.23-6.014-35.858-13.348-52.766-21.902l-120.828 86.304-135.898-135.898 86.454-121.036c-8.47-16.83-15.734-34.366-21.692-52.498l-146.774-24.46v-192.188l147.118-24.52c5.96-17.968 13.21-35.348 21.642-52.030l-86.748-121.448 135.898-135.896 121.654 86.894c16.602-8.35 33.89-15.528 51.764-21.434l24.578-147.472h192.188l24.578 147.474c17.874 5.906 35.162 13.084 51.766 21.432l121.652-86.892 135.896 135.896-86.744 121.446c8.432 16.682 15.678 34.062 21.64 52.032l147.118 24.518zM512 320c-70.692 0-128 57.306-128 128 0 70.692 57.308 128 128 128 70.694 0 128-57.308 128-128 0-70.694-57.306-128-128-128z&quot;</span> <span class="nt">/&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-line-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-line-code js-file-line"><span class="nt">&lt;/font&gt;&lt;/defs&gt;&lt;/svg&gt;</span></td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="button">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.05024s from github-fe125-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents js-suggester-field" placeholder=""></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2b4202fc62ef88e1a007a9ed05df10607b189f42.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-1bf4ba2cf32b38523c4ec10ea568b6796e345c47.js" type="text/javascript"></script>
+      
+      
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>
+

@@ -5,11 +5,13 @@ new function() {
     var SCRATCHPAD_OPTIONS = {
         'size': 10,
         'bg': '#0066ff',
-        'fg': './images/maple-background-v.png',
+        'fg': '#999999',
+        // 'fg': './images/maple-background-v.png',
         'realtime': true,
         'cursor': 'url("./images/leaf.png") 8 8, default',
         'scratchMove': scratchMove,
-        'scratchDown': scratchDown
+        'scratchDown': scratchDown,
+        'scratchUp': scratchUp
     };
 
     var scenes = [,,
@@ -78,7 +80,7 @@ new function() {
 
     var swapTimer;
     var swapTime = 0;
-    var swapPercentage = 0;
+    var startTime;
 
     var $cover;
     var $cards;
@@ -109,38 +111,30 @@ new function() {
         scratch = $cover.wScratchPad(SCRATCHPAD_OPTIONS);
     }
 
-    function scratchDown() {
-        if (swapTime === 0) {
-            $('.realtime-percentage').removeClass('hidden');
-            swapTimer = setInterval(function() {
-                swapTime += .1;
-                $realtimeSeconds.text(swapTime.toFixed(1) + '秒');
-            }, 100)
+    function scratchDown(e, percent) {
+        if (!startTime) {
+            // Start count.
+            startTime = new Date;
         }
     }
 
-    function scratchMove(ctx, percent) {
-        percent = percent >> 0;
+    function scratchMove(e, percent) {}
 
-        $realtimePercentage.text(100 - percent);
-
+    function scratchUp(e, percent) {
         if (percent > 5) {
             this.enable(false);
 
-            if (swapTimer) {
-                clearInterval(swapTimer);
-                swapTimer = null;
-            }
-
-            $('.realtime-percentage').addClass('hidden');
-
+            // Show swap result.
             showResult();
 
+            // Init cardView.
             initCardView();
         }
     }
 
     function showResult() {
+        swapTime = new Date - startTime;
+
         $gameResult.text(swapTime.toFixed(3) + 's');
         $gamePercentage.text((Math.random() * 100 >> 0) + '%');
         $('.game-result').addClass('game-result-show');
