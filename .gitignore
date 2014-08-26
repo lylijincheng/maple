@@ -1,12 +1,4 @@
 .sass-cache
 
 assets
-sass
-stylesheets
-javascripts
 node_modules
-
-todo
-package.json
-Gruntfile.js
-*-dev.html

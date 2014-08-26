@@ -1,0 +1,550 @@
+@import "compass/css3"
+@import "compass/utilities"
+@import "compass/typography"
+
+$font-face: "Helvetica Neue", "Helvetica", simhei, "Microsoft yahei", "\u5fae\u8f6f\u96c5\u9ed1", sans-serif
+
+.full
+  margin: 0
+  padding: 0
+
+=fullscreen
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+
+=user-select($value)
+  -webkit-user-select: $value
+  -moz-user-select: $value
+  -ms-user-select: $value
+
+ul, 
+ol, 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6
+  @extend .full
+
+body
+  font-family: $font-face
+  color: #FFFFFF
+
+a
+  text-decoration: none
+
+ul 
+  list-style: none
+
+  &>li
+    padding: 0
+
+.hidden
+  display: none !important
+
+.fulfill
+  @extend .full
+  width: 100%
+  height: 100%
+  display: block
+
+.unselectable
+  +user-select(none)
+
+body
+  width: 980px
+  margin: 0 auto
+  background-image: url(../images/main-background.jpg)
+  background-repeat: repeat-y
+  background-size: 100%
+  background-attachment: fixed
+
+#full-mask
+  +fullscreen
+  +transition-property(opacity)
+  +transition-duration(600ms)
+  position: fixed
+  z-index: 21
+  background-color: rgba(0,0,0, .67)
+
+  .focus-container
+    width: 640px
+    height: 400px
+    margin: 40px auto
+    position: relative
+
+  .close-layer
+    position: absolute
+    display: block
+    right: -25px
+    top: -25px
+    width: 50px
+    height: 50px
+    background: url(../images/close.png) no-repeat
+    opacity: .67
+    z-index: 1
+
+  .scene-layer,
+  .prize-layer
+    background-color: #EC6570
+    margin: 60px 0
+
+    .scene-title
+      font-size: 2em
+      width: 2em
+      line-height: 1.2
+
+    .scene-content
+      font-size: 1.2em
+      letter-spacing: 1px
+      margin: 25px 0
+
+#cover
+  color: #FFFFFF
+
+  .logo
+    margin: 2%
+    float: left
+
+    &>img
+      margin-left: 10px
+
+  .header-title
+    margin-left: 400px
+    margin-top: 5%
+
+  h1, h2, h3
+    font-weight: normal
+    letter-spacing: 2px
+
+  h1
+    font-size: 4em
+
+  h2
+    font-size: 1.8em
+    margin-top: .2em
+  
+  h3
+    font-size: 1.2em
+    line-height: 1.8em
+    margin: 1em 0
+    padding-left: 1.6em
+    background: url(../images/loc-small.png) no-repeat left center
+
+  i
+    display: inline-block
+    position: absolute
+
+  .cover-content
+    width: 85%
+    position: relative
+    margin: 24px auto 0 auto
+
+  .cover-body,
+  .video-layer
+    height: 400px
+    margin-bottom: 80px
+    margin-right: 202px
+
+  .cover-body
+    overflow: hidden
+
+    .logo-small
+      position: absolute
+      left: 10px
+      top: 10px
+      z-index: 1
+      font-size: .875em
+      background: url(../images/logo-site.png) no-repeat
+      width: 127px
+      height: 60px
+      padding-top: 42px
+      -webkit-user-select: none
+
+  .video-layer
+    +fullscreen
+    position: absolute
+    background: rgba(0, 0, 0, .5)
+    z-index: 2
+    width: 100%
+  
+  .cover-sidebar
+    float: right
+
+  .cover-links,
+  .cover-video
+    width: 200px
+    height: 200px
+
+  .cover-links,
+  .cover-video
+    background-color: #ED6571
+
+    li
+      width: 99px
+      height: 100px
+      float: left
+      display: inline-block
+      position: relative
+      border-bottom: 2px solid #BF252F
+      background-repeat: no-repeat
+
+    li:nth-child(2n-1)
+      border-right: 2px solid #BF252F
+
+    a
+      display: block
+      width: 100%
+      height: 100%
+      text-indent: -9999em
+
+    a:hover
+      text-decoration: none
+
+    .scene
+      background: url(../images/scene-link.png)
+    .scene:hover
+      background: url(../images/scene-link-hover.png)
+
+    .trip
+      background: url(../images/trip-link.png)
+    .trip:hover
+      background: url(../images/trip-link-hover.png)
+
+    .location
+      background: url(../images/location-link.png)
+    .location:hover
+      background: url(../images/location-hover.png)
+
+    .prize
+      background: url(../images/prize-link.png)
+    .prize:hover
+      background: url(../images/prize-hover.png)
+
+  .cover-video
+    width: 200px
+    height: 200px
+
+    .video
+      background: url(../images/video-link.png)
+
+    .video:hover
+      background: url(../images/video-hover.png)
+
+  .user-guide
+    position: absolute
+    z-index: 2
+    left: 45%
+    top: 36%
+    text-align: center
+
+    &>img
+      +transition(transform 1.5s linear)
+      pointer-events: none
+      z-index: -1
+
+    p
+      margin-top: 20px
+      font-size: 1.5em
+
+  .game-result
+    width: 100%
+    height: 100%
+    background-color: rgba(255,0,0, .33)
+    position: absolute
+    z-index: 2
+
+    p
+      text-align: center
+      margin-bottom: 20px
+
+    .result
+      padding: 50px 0
+      font-size: 1.2em
+
+    .seconds > span
+      font-size: 2.5em
+
+    .share,
+    .retry
+      a
+        display: block
+        width: 300px
+        height: 54px
+        background-repeat: no-repeat
+        margin: 0 auto
+
+    .share > a
+      background-image: url(../images/share-web.png)
+
+    .retry > a
+      background-image: url(../images/retry-web.png)
+
+  .retry-button
+    position: relative
+    background: url('../images/retry-button.png') no-repeat
+    width: 114px
+    height: 54px
+    z-index: 1
+    left: 28px
+    top: 320px
+    cursor: pointer
+
+#scene
+  padding-bottom: 80px
+
+  .slides-type
+    height: 200px
+    width: 800px
+    margin: 27px auto
+    position: relative
+    background: url(../images/map-line-combine.png) no-repeat 0 -200px
+
+  .slides-set
+    width: 140px
+    height: 70px
+    position: absolute
+    cursor: pointer
+    // border-left: 20px solid #EF7979
+
+    // &:after
+      content: ''
+      position: absolute
+      top: 55px
+      left: -15px
+      width: 20px
+      height: 20px
+      display: block
+      border: 15px solid transparent
+      border-left-color: #FF0000
+      +transform(rotate(-45deg), false)
+
+    > img
+      margin-top: 2px
+
+  .slides-set:nth-child(1)
+    left: 14px
+    top: 4px
+
+  .slides-set:nth-child(2)
+    left: 175px
+    top: -2px
+
+  .slides-set:nth-child(3)
+    left: 354px
+    top: 66px
+
+  .slides-set:nth-child(4)
+    left: 526px
+    top: 28px
+
+  .slides-set:nth-child(5)
+    left: 712px
+    top: 4px
+
+  .carousel
+    width: 780px
+    margin: 0 auto
+
+  .carousel-indicators
+    bottom: 8px
+
+  .carousel-control
+    background-image: none
+
+  .carousel-control.right
+    right: -100px
+
+  .carousel-control.left
+    left: -100px
+
+  .carousel-info
+    border: 4px solid #FFFFFF
+
+    h3
+      margin: 12px 0 10px 0
+    
+    .carousel-info-title
+      float: left
+      padding: 0 25px
+
+    .carousel-info-link
+      width: 90px
+      border-left: 4px solid #FFFFFF
+      font-size: 20px
+      line-height: 86px
+      float: right
+      color: #FFFFFF
+      
+      &:hover
+        text-decoration: none
+
+    .external-link
+      display: block
+      width: 100%
+      height: 100%
+
+#hotel
+  padding-bottom: 80px
+
+  .subtitle
+    width: 400px
+
+    h2
+      width: 85px
+
+  .trip
+    width: 800px
+    margin: 20px auto
+    margin-bottom: 0
+
+    border-spacing: 3px
+    border-collapse: separate
+
+    td
+      width: 180px
+      padding: 5px
+      background-color: #FFFFFF
+      color: #333333
+      vertical-align: top
+
+      p
+        margin: 8px 0
+        padding: 0 .4em
+
+      .from
+        font-size: smaller
+
+      .link
+        margin-top: 15px
+        color: #48C9CE
+
+.separation-title
+  width: 800px
+  margin: 40px auto
+
+  .separation-header
+    float: left
+    font-size: 32px
+    margin-left: 34px
+
+  .separation-begin,
+  .separation-end
+    width: 300px
+    height: 2px
+    background: #FFFFFF
+    position: relative
+    top: 22px
+
+  .separation-begin
+    float: left
+
+  .separation-end
+    float: right
+
+.scene-header
+  padding-top: 40px
+  padding-left: 30px
+  position: relative
+
+  .subtitle
+    margin-left: 20px
+    margin-bottom: 20px
+    padding: 10px
+    border: 8px solid #FFFFFF
+    width: 485px
+
+  h1, h2
+    display: inline-block
+
+  h1
+    font-size: 4em
+    margin-left: .2em
+
+  h2
+    width: 130px
+    text-align: right
+    font-size: 1.6em
+
+.scene-header:after
+  content: ''
+  position: absolute
+  width: 0
+  height: 0
+  border: 15px solid transparent
+  border-bottom-color: #FFFFFF
+  top: 122px
+  left: 56px
+  +transform(rotate(45deg), false)
+
+
+.scene-description,
+.slides-type
+  font-size: 1.2em
+  letter-spacing: 1px
+
+.scene-description
+  padding-top: 40px
+  text-indent: 2em
+  width: 780px
+  margin: 0 auto
+
+.site-footer
+  background-color: rgba(0,0,0, .1)
+  padding: 20px 0
+  width: 800px
+  margin: 0 auto
+
+
+  li
+    float: left
+
+  .partner
+    width: 590px
+    margin: 40px auto
+
+  .partner > li
+    margin: 0 10px
+
+  .social > li
+    margin: 0 32px
+    text-align: center
+
+    a
+      color: #FFFFFF
+
+    a:hover
+      text-decoration: none
+
+    .title
+      margin: 10px 0
+      font-size: 1.3em
+
+    .title + div
+      height: 26px
+      line-height: 26px
+
+    .weibo
+
+    .weixin
+      background: url(../images/weixin.png) no-repeat 50px
+      padding-left: 30px
+
+    .youku
+      a
+        padding: .35em 1em
+        background-color: #01AFB8
+
+#one-page-wrapper
+  section:nth-child(1) 
+    +background-image(linear-gradient(to right, #BF1C5D, #BF2527))
+
+  section:nth-child(2) 
+    +background-image(linear-gradient(to right, #2098CA, #2E57CD))
+
+  section:nth-child(3) 
+    +background-image(linear-gradient(to right, #48C9CE, #3292A0))

@@ -1,0 +1,292 @@
+@import compass/css3
+
+$font-face: "Helvetica Neue", "Helvetica", sans-serif
+
+.full
+  margin: 0
+  padding: 0
+
+ul, 
+ol, 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6
+  @extend .full
+
+body
+  font-family: $font-face
+  font-size: .825em
+
+a
+  text-decoration: none
+
+.hidden
+  display: none !important
+
+.fulfill
+  @extend .full
+  width: 100%
+  height: 100%
+  display: block
+
+.unselectable
+  +user-select(none)
+  pointer-events: none
+  z-index: -1
+
+=user-select($value)
+  -webkit-user-select: $value
+  -moz-user-select: $value
+  -ms-user-select: $value
+
+.button
+  color: #FF0000
+  padding: .4em 2em
+  border-radius: 2px
+  background-color: #FFFFFF
+  display: inline-block
+  vertical-align: baseline
+  white-space: nowrap
+  text-align: center
+  line-height: normal
+  border-width: 0
+  cursor: pointer
+  zoom: 1
+  -webkit-user-drag: none
+  -webkit-user-select: none
+
+html, 
+body,
+#view
+  @extend .fulfill
+
+#cards
+  @extend .fulfill
+  overflow: hidden
+
+.cover,
+.map
+  &>div
+    width: 100%
+    height: 100%
+
+.cards-logo
+  position: absolute
+  background: url(../images/logo-site-bg.png)
+  background-repeat: no-repeat
+  background-size: 64px 20px
+  width: 64px
+  height: 20px
+  margin: 20px auto
+  left: 40%
+
+.scratch-logo
+  +transition(transform 1.5s linear)
+  position: absolute
+  z-index: 1
+  left: 35%
+  top: 50%
+
+.card,
+.scene-view,
+.map-view
+  overflow: hidden
+  background-repeat: no-repeat 
+  +background-size(100% 100%)
+
+.game-result
+  position: absolute
+  bottom: -260px
+  height: 260px
+  left: 0
+  right: 0
+  z-index: 1
+  color: #FFFFFF
+  padding: 10px 20px
+  background-color: rgba(255,0,0, .5)
+  -webkit-transition: bottom  600ms ease
+
+.game-result-show
+  bottom: 0px
+
+  &>div
+    margin-top: 20px
+    text-align: center
+
+  .result-area
+    span:first-child
+      font-size: 1.8em
+      color: #FFFFFF
+
+  .button
+    font-size: 1.6em
+
+  .button-image
+    display: block
+    width: 220px
+    height: 40px
+    text-indent: -9999em
+    margin: 0 auto
+    background-repeat: no-repeat
+    background-size: 220px 40px
+
+  .share-area,
+  .retry-area
+    text-align: center
+
+  .share-area > a
+    background-image: url(../images/share-web-440.png)
+
+  .retry-area > a
+    background-image: url(../images/retry-web-440.png)
+
+  .up-arrow
+    display: inline-block
+    width: 33px
+    height: 18px
+    margin: 20px 12px
+    background-image: url(../images/up-arrow.png)
+    background-size: 33px 18px
+    background-position: center center
+
+.weixin-result
+  height: 100%
+  padding-top: 50%
+  background: rgba(0,0,0, .67) url(../images/weixin-guide.png) no-repeat 92% 10%
+  background-size: 70px 70px
+
+  .result-area
+    span:fist-child
+      color: #F14F4A
+
+  .arrow-area
+    position: relative
+    bottom: -44%
+
+  .weixin-guide
+    span
+      color: #50DDEE
+
+.realtime-percentage
+  background-color: transparent
+  color: #FFFFFF
+  z-index: 2
+  position: absolute
+  bottom: 30%
+  left: 0
+  right: 0
+
+  &>div,
+  p
+    text-align: center
+
+  &>div>span
+    font-size: 1.125em
+
+.map
+  .map-scene
+    position: absolute
+    background: grey
+    display: block
+    height: 47px
+    text-indent: -9999em
+    background-repeat: no-repeat
+    background-color: transparent
+
+  .map-scene:nth-child(1)
+    left: 72%
+    top: 26%
+    width: 73px
+    background-image: url(../images/map-scene-1.png)
+    +background-size(73px 47px)
+
+  .map-scene:nth-child(2)
+    left: 60%
+    top: 42%
+    width: 78px
+    background-image: url(../images/map-scene-2.png)
+    +background-size(78px 47px)
+
+  .map-scene:nth-child(3)
+    left: 12%
+    top: 58%
+    width: 84px
+    background-image: url(../images/map-scene-3.png)
+    +background-size(84px 47px)
+
+  .map-scene:nth-child(4)
+    left: 23%
+    top: 74%
+    width: 71px
+    background-image: url(../images/map-scene-4.png)
+    +background-size(71px 47px)
+
+  .map-scene:nth-child(5)
+    left: 45%
+    top: 82%
+    width: 84px
+    background-image: url(../images/map-scene-5.png)
+    +background-size(83px 47px)
+
+.scene
+  color: #FFFFFF
+  overflow: hidden
+  +background-size(cover)
+
+  .scene-header
+    position: absolute
+    top: 80px
+    left: 20px
+    padding: .8em
+    border: 4px solid #FFFFFF
+
+  .scene-intros
+    position: absolute
+    left: 20px
+    width: 50%
+    padding: 0 10px 10px 10px
+    background: rgba(0,0,0, .33)
+
+  .scene-block
+
+    h3
+      font-size: 1em
+      margin-top: 10px
+      color: #66C8CB
+
+    p
+      font-size: .825em
+      margin-top: 2px
+
+#audio-player,
+#global-up-arrow
+  position: absolute
+
+#audio-player
+  width: 30px
+  height: 30px
+  background-size: 30px 30px
+  background-repeat: no-repeat
+  z-index: 11
+  right: 20px
+  top: 20px
+
+.playing
+  background-image: url(../images/music-icon.png)
+  -webkit-animation: playing 1.5s linear 0 infinite normal
+  // animation: name duration timing-function delay iteration-count direction;
+  // animation: none 0 ease 0 1 normal;
+
+.pause
+  background-image: url(../images/music-icon-hl.png) 
+
+@-webkit-keyframes playing
+  0%
+    -webkit-transform: rotate(0deg)
+
+  100%
+    -webkit-transform: rotate(360deg)
