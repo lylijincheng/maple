@@ -365,7 +365,7 @@ body {
 }
 /* line 287, ../sass/maple-web.sass */
 #cover .retry-button {
-  position: relative;
+  position: absolute;
   background: url("../images/retry-button.png") no-repeat;
   width: 114px;
   height: 54px;

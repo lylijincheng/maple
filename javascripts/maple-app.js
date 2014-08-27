@@ -108,6 +108,7 @@ new function() {
 
             // Show swap result.
             showResult();
+            $('#global-up-arrow').removeClass('hidden');
 
             // Init cardView.
             // initCardView();

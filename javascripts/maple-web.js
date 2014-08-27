@@ -118,8 +118,7 @@ new function() {
     }
 
     function scratchUp(e, p) {
-        // if (p > 95) {
-        if (p > 50) {
+        if (p > 99) {
             this.enable(false);
             this.clear();
 
@@ -142,8 +141,8 @@ new function() {
 
     function shareGame(e) {
         startTime = null;
-        $('.game-result').addClass('hidden');
         $('.retry-button').removeClass('hidden');
+        $('.game-result').addClass('hidden');
     }
 
     function retryGame(e) {
@@ -151,8 +150,9 @@ new function() {
         $('.game-result').addClass('hidden');
         $('.retry-button').addClass('hidden');
 
-        scratch.wScratchPad('reset');
-        scratch.wScratchPad('enable', true);
+        $cover.wScratchPad('bg', scratchBackgrouds[(scratchBackgrouds.length * Math.random()) >> 0]);
+        $cover.wScratchPad('reset');
+        $cover.wScratchPad('enable', true);
 
         $('.user-guide').removeClass('hidden');
         $cover.css('cursor', 'url(./images/maple-icon-100.png) 50 50, default');

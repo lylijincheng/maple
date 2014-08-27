@@ -144,6 +144,9 @@ body,
   .retry-area > a
     background-image: url(../images/retry-web-440.png)
 
+  .arrow-area
+    padding-bottom: 40px
+
   .up-arrow
     display: inline-block
     width: 33px
@@ -284,9 +287,28 @@ body,
 .pause
   background-image: url(../images/music-icon-hl.png) 
 
+#global-up-arrow
+  width: 32px
+  height: 16px
+  z-index: 11
+  bottom: 2%
+  left: 45%
+  background: url(../images/up-arrow.png) no-repeat
+  background-size: 32px 16px
+  -webkit-animation: arrow 1.2s ease-out 0 infinite normal
+
 @-webkit-keyframes playing
   0%
     -webkit-transform: rotate(0deg)
 
   100%
     -webkit-transform: rotate(360deg)
+
+@-webkit-keyframes arrow
+  0%
+    -webkit-transform: translate3d(0, 0, 0)
+    opacity: 1
+
+  100%
+    -webkit-transform: translate3d(0, -20px, 0)
+    opacity: 0
