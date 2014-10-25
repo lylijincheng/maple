@@ -104,7 +104,7 @@ function CardView (el, options) {
 		startPage: 0,
 
 		deg: 25,
-		duration: .2,
+		duration: .28,
 		perspective: '300px',
 		resizePolling: 100,
 
@@ -292,7 +292,7 @@ CardView.prototype = {
 			this[this.effect + 'Init']();
 		}
 
-		if ( absDistance < this.wrapperSize / 20 ) {
+		if ( absDistance < this.wrapperSize / 3 ) {
 			this[this.effect + 'Move'](distance);
 		} else {
 			this.flipped = true;

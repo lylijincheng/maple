@@ -9,7 +9,7 @@ function r_init_share_background(filepath)
     cssBox = jQuery(document.createElement("div"));
     jQuery(document.body).append(cssBox);
     cssBox.attr("id", "weibo_css_box");
-    cssBox.html('<style type="text/css">.WB_imgHolder { background:url('+filepath+')!important;background-size:80px!important; } .WB_imgHolder img { visibility:hidden; }  </style>');
+    cssBox.html('<style type="text/css">.WB_imgHolder { background:url('+filepath+')!important;background-size:80px!important; } .WB_imgHolder img { visibility:hidden; } .WB_textarea{height:80px!important;width:363px!important;} </style>');
 }
 
 function showRemoteResult()
@@ -60,6 +60,8 @@ jQuery.cookie = function(name, value, options) {
 function r_get_rank(mstotaltime)
 {
 	window.MSTIME = mstotaltime;
+    window.PERCENTAGE = 50;
+    r_init_share_button(mstotaltime, window.PERCENTAGE, showRemoteResult);
 	jQuery.ajax({
         "url":"index.php?action=share.rank",
         "dataType":"json",
@@ -93,13 +95,15 @@ function r_submit_result(uid, name, avatar, ulink, ufriendc, wbid, mstotaltime, 
 }
 
 function r_init_share_button(mstime, rank, callback) {
-	//r_init_share_background("images/logo.png");
-    var picUrl = "";
+	
+    var picUrl = "http://ontariotravel.cn/2014fallcampaign/images/haibao.jpg";
+    /*
     if($("#scratch-background-img") != null && $("#scratch-background-img") !='undefined'){
         picUrl = "http://ontariotravel.cn/2014fallcampaign/" + $("#scratch-background-img").attr("src");
     }
-
-	wb_init_pc_share_btn("share-button", "#枫狂黄金周#我用"+ mstime / 1000.0 +"秒扫完枫叶，快过了"+ rank+"%的人，加拿大安大略省秋季枫情美景，你也来体验吧！http://www.ontariotravel.cn/2014fallcampaign", [], function (success, uid, name, avatar, ulink, ufriendc, wbid) {
+    */
+    r_init_share_background(picUrl);
+	wb_init_pc_share_btn("share-button", "#枫狂黄金周#我用"+ mstime / 1000.0 +"秒扫完枫叶，快过了"+ rank+"%的人, @安大略省旅游局微博，加拿大安大略省秋季枫情美景，你也来体验吧！http://www.ontariotravel.cn/2014fallcampaign", [picUrl], function (success, uid, name, avatar, ulink, ufriendc, wbid) {
         if (success) {
             //抽奖
              r_submit_result(uid, name, avatar, ulink, ufriendc, wbid, mstime, callback);   
